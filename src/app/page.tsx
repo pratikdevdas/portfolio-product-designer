@@ -10,7 +10,7 @@ export default function Home() {
       <header>
         {/* topbar */}
         <div className='bg-[#DED9FF]'>
-          <div className='py-4 text-center max-w-screen-xl mx-auto '>💼 Open to work as Full-time and Freelancer . Contact.</div>
+          <div className='py-4 text-center max-w-screen-xl mx-auto  text-[#573FEA] font-semibold'><span>💼</span> Open to work as Full-time and Freelancer . <Link href="#" className='underline'>Contact</Link></div>
         </div>
         <div className="max-w-screen-xl mx-auto flex justify-between items-center py-6">
           <Link href="/"><Image src="/Shushant.svg" alt='logo' width={120} height={120} /></Link>
@@ -26,9 +26,9 @@ export default function Home() {
         </div>
       </header>
       <section className='pt-32 pb-40 text-center max-w-5xl mx-auto'>
-        <h1 className='mb-16 text-6xl leading-[72px] font-semibold tracking-[-1.6px]'>Hi there, I’m <br />
+        <h1 className='mb-16 text-6xl leading-[72px] font-medium tracking-[-1.6px]'>Hi there, I’m <br />
           <span className='text-[#573FEA]'>Shushant kumar</span></h1>
-        <p className='text-2xl font-semibold leading-9'>I work as a 🧑🏼‍💻 Senior Product Designer for 💼 Flipkart-Cleartrip.
+        <p className='text-2xl font-medium leading-9'>I work as a 🧑🏼‍💻 Senior Product Designer for 💼 Flipkart-Cleartrip.
           Passionate about creating functional 📏 and aesthetically 🌁 pleasing designs, constantly learning and experimenting 🔬with new system and technologies📡.</p>
       </section>
       <Works />
