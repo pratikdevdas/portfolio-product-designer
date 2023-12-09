@@ -3,12 +3,12 @@ import Image from "next/image"
 
 const works = () => {
 	return (
-		<section className='mt-16 mb-32 max-w-screen-xl mx-auto '>
+		<section className='mt-16 mb-32 max-w-largest mx-auto '>
 			<h1 className='mb-16 text-center leading-[88px] tracking-[-1.6px] text-7xl font-semibold'>Selected Work.</h1>
 			<div className='cardcontainer | flex flex-col gap-10 '>
 				{/* card start */}
 				<div className="bg-[#CCF5F3] pt-28 px-24 gap-32 flex justify-between rounded-3xl border border-black border-solid shadow-workCard">
-					<div className="text-center mt-8">
+					<div className="text-center mt-4">
 						<h1 className="text-[64px] font-semibold leading-[80px] mb-6 ">
 							International flight booking
 						</h1>

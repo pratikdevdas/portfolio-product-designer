@@ -17,6 +17,9 @@ const config: Config = {
         'workCard' : '-4px 4px 0px 0px rgba(0, 0, 0, 0.05)',
         'workCardMobile' : '6px 0px 0px 0px rgba(0, 0, 0, 0.15)',
         'workCardDesktop' : '0px 6px 0px 0px rgba(0, 0, 0, 0.15)'
+      },
+      maxWidth:{
+        'largest': '1224px'
       }
     },
   },

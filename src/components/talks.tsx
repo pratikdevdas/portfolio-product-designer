@@ -3,7 +3,7 @@ import Image from "next/image"
 const talks = () => {
 	return (
 		<section className='pt-60 bg-[#FFDE70] pb-[488px]  '>
-			<div className='flex  max-w-screen-xl mx-auto gap-10 pb-28'>
+			<div className='flex  max-w-largest mx-auto gap-10 pb-28'>
 				<h1 className='leading-[92px] tracking-[-1.6px] text-[84px] font-semibold'><span>Talks.</span> <br /><span className="text-[#573FEA]">Workshops. </span></h1>
 				<div className='leading-6 text-lg'>
 
@@ -12,7 +12,7 @@ const talks = () => {
 						I’ve had the honor of speaking at over 20+ events in some of the most beautiful and vibrant parts of the India. Im intent on challenging the ways we think about design, and being present in places that aren’t frequented by big conferences.</p>
 				</div>
 			</div>
-			<div className="grid grid-cols-3 max-w-screen-xl mx-auto gap-x-5 gap-y-8 auto-rows-min">
+			<div className="grid grid-cols-3 max-w-largest mx-auto gap-x-5 gap-y-8 auto-rows-min">
 				<div className="flex border border-black border-solid col-span-3 bg-white p-6 rounded-3xl gap-6 shadow-[8px_8px_0px_0px_#573FEA]">
 					{/* workaround: explicity height reason(as i was not able to remove height auto from basic) : https://github.com/tailwindlabs/tailwindcss/pull/7742#issuecomment-1061332148 */}
 					<Image src="/desingboat.png" width={746} height={508} alt="designboat" className="shrink-0 h-[508px]" />
