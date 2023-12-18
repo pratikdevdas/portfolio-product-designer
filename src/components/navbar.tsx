@@ -11,7 +11,7 @@ const Navbar = () => {
 				<Link href="/"><Image src="/Shushant.svg" alt='logo' width={120} height={120} /></Link>
 				<nav className="primary-navigation" id="primary-navigation">
 					<ul aria-label="Primary" role="list" className="flex gap-11 font-medium">
-						<li><Link href="#">Work</Link></li>
+						<li><Link href="/work">Work</Link></li>
 						<li><Link href="#">workshop</Link></li>
 						<li><Link href="/about">About Me</Link></li>
 						<li><Link href="#">Contact</Link></li>
