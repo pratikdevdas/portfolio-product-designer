@@ -3,6 +3,59 @@ import React from 'react'
 import Image from 'next/image'
 import Footer from '@/components/footer'
 import Card from '@/components/works/Card'
+
+const data = [
+  {
+    key: '1',
+    title: 'Rewards Center',
+    description: 'Run rewards programs and drive customer engagement',
+    url: '/workpage/firstbox.svg',
+    alt: 'firstbox',
+  },
+  {
+    key: '2',
+    title: 'Power Center',
+    description: 'Run rewards programs and drive',
+    url: '/workpage/firstbox.svg',
+    alt: 'firstbox',
+  },
+  {
+    key: '3',
+    title: 'Rewards Center',
+    description: 'Run rewards programs and drive customer engagement',
+    url: '/workpage/firstbox.svg',
+    alt: 'firstbox',
+  },
+  {
+    key: '4',
+    title: 'Rewards Center',
+    description: 'Run rewards programs and drive customer engagement',
+    url: '/workpage/firstbox.svg',
+    alt: 'firstbox',
+  },
+  {
+    key: '5',
+    title: 'Rewards Center',
+    description: 'Run rewards programs and drive customer engagement',
+    url: '/workpage/firstbox.svg',
+    alt: 'firstbox',
+  },
+  {
+    key: '6',
+    title: 'Rewards Center',
+    description: 'Run rewards programs and drive customer engagement',
+    url: '/workpage/firstbox.svg',
+    alt: 'firstbox',
+  },
+  {
+    key: '7',
+    title: 'Rewards Center',
+    description: 'Run rewards programs and drive customer engagement',
+    url: '/workpage/firstbox.svg',
+    alt: 'firstbox',
+  },
+]
+
 const page = () => {
   return (
     <div className="bg-[#F8F7F2]">
@@ -61,188 +114,24 @@ const page = () => {
         </div>
 
         <div className="mx-auto grid max-w-largest auto-rows-min grid-cols-3 gap-x-5 gap-y-8">
-          <div className="rounded-3xl border border-solid border-black bg-white p-6 shadow-workCard">
-            <Image
-              src="/workpage/firstbox.svg"
-              width={450}
-              height={450}
-              alt="firstbox"
-              className="shrink-0"
-            ></Image>
-            <h3 className="pb-2  pt-6 text-2xl font-semibold leading-8">
-              Rewards Center
-            </h3>
-            <p className="text-base leading-6">
-              Run rewards programs and drive customer engagement
-            </p>
-          </div>
-          <div className="rounded-3xl border border-solid border-black bg-white p-6 shadow-workCard">
-            <Image
-              src="/workpage/firstbox.svg"
-              width={450}
-              height={450}
-              alt="firstbox"
-              className="shrink-0"
-            ></Image>
-            <h3 className="pb-2  pt-6 text-2xl font-semibold leading-8">
-              Rewards Center
-            </h3>
-            <p className="text-base leading-6">
-              Run rewards programs and drive customer engagement
-            </p>
-          </div>
-          <div className="rounded-3xl border border-solid border-black bg-white p-6 shadow-workCard">
-            <Image
-              src="/workpage/firstbox.svg"
-              width={450}
-              height={450}
-              alt="firstbox"
-              className="shrink-0"
-            ></Image>
-            <h3 className="pb-2  pt-6 text-2xl font-semibold leading-8">
-              Rewards Center
-            </h3>
-            <p className="text-base leading-6">
-              Run rewards programs and drive customer engagement
-            </p>
-          </div>
-          <div className="rounded-3xl border border-solid border-black bg-white p-6 shadow-workCard">
-            <Image
-              src="/workpage/firstbox.svg"
-              width={450}
-              height={450}
-              alt="firstbox"
-              className="shrink-0"
-            ></Image>
-            <h3 className="pb-2  pt-6 text-2xl font-semibold leading-8">
-              Rewards Center
-            </h3>
-            <p className="text-base leading-6">
-              Run rewards programs and drive customer engagement
-            </p>
-          </div>
-          <div className="rounded-3xl border border-solid border-black bg-white p-6 shadow-workCard">
-            <Image
-              src="/workpage/firstbox.svg"
-              width={450}
-              height={450}
-              alt="firstbox"
-              className="shrink-0"
-            ></Image>
-            <h3 className="pb-2  pt-6 text-2xl font-semibold leading-8">
-              Rewards Center
-            </h3>
-            <p className="text-base leading-6">
-              Run rewards programs and drive customer engagement
-            </p>
-          </div>
-          <div className="rounded-3xl border border-solid border-black bg-white p-6 shadow-workCard">
-            <Image
-              src="/workpage/firstbox.svg"
-              width={450}
-              height={450}
-              alt="firstbox"
-              className="shrink-0"
-            ></Image>
-            <h3 className="pb-2  pt-6 text-2xl font-semibold leading-8">
-              Rewards Center
-            </h3>
-            <p className="text-base leading-6">
-              Run rewards programs and drive customer engagement
-            </p>
-          </div>
-
-          <div className="rounded-3xl border border-solid border-black bg-white p-6 shadow-workCard">
-            <Image
-              src="/workpage/firstbox.svg"
-              width={450}
-              height={450}
-              alt="firstbox"
-              className="shrink-0"
-            ></Image>
-            <h3 className="pb-2  pt-6 text-2xl font-semibold leading-8">
-              Rewards Center
-            </h3>
-            <p className="text-base leading-6">
-              Run rewards programs and drive customer engagement
-            </p>
-          </div>
-          <div className="rounded-3xl border border-solid border-black bg-white p-6 shadow-workCard">
-            <Image
-              src="/workpage/firstbox.svg"
-              width={450}
-              height={450}
-              alt="firstbox"
-              className="shrink-0"
-            ></Image>
-            <h3 className="pb-2  pt-6 text-2xl font-semibold leading-8">
-              Rewards Center
-            </h3>
-            <p className="text-base leading-6">
-              Run rewards programs and drive customer engagement
-            </p>
-          </div>
-          <div className="rounded-3xl border border-solid border-black bg-white p-6 shadow-workCard">
-            <Image
-              src="/workpage/firstbox.svg"
-              width={450}
-              height={450}
-              alt="firstbox"
-              className="shrink-0"
-            ></Image>
-            <h3 className="pb-2  pt-6 text-2xl font-semibold leading-8">
-              Rewards Center
-            </h3>
-            <p className="text-base leading-6">
-              Run rewards programs and drive customer engagement
-            </p>
-          </div>
-          <div className="rounded-3xl border border-solid border-black bg-white p-6 shadow-workCard">
-            <Image
-              src="/workpage/firstbox.svg"
-              width={450}
-              height={450}
-              alt="firstbox"
-              className="shrink-0"
-            ></Image>
-            <h3 className="pb-2  pt-6 text-2xl font-semibold leading-8">
-              Rewards Center
-            </h3>
-            <p className="text-base leading-6">
-              Run rewards programs and drive customer engagement
-            </p>
-          </div>
-          <div className="rounded-3xl border border-solid border-black bg-white p-6 shadow-workCard">
-            <Image
-              src="/workpage/firstbox.svg"
-              width={450}
-              height={450}
-              alt="firstbox"
-              className="shrink-0"
-            ></Image>
-            <h3 className="pb-2  pt-6 text-2xl font-semibold leading-8">
-              Rewards Center
-            </h3>
-            <p className="text-base leading-6">
-              Run rewards programs and drive customer engagement
-            </p>
-          </div>
-          <div className="rounded-3xl border border-solid border-black bg-white p-6 shadow-workCard">
-            <Image
-              src="/workpage/firstbox.svg"
-              width={450}
-              height={450}
-              alt="firstbox"
-              className="shrink-0"
-            ></Image>
-            <h3 className="pb-2  pt-6 text-2xl font-semibold leading-8">
-              Rewards Center
-            </h3>
-            <p className="text-base leading-6">
-              Run rewards programs and drive customer engagement
-            </p>
-          </div>
-          {/* testimonial */}
+          {data.map((d) => (
+            <div
+              key={d.key}
+              className="rounded-3xl border border-solid border-black bg-white p-6 shadow-workCard"
+            >
+              <Image
+                src={d.url}
+                width={450}
+                height={450}
+                alt={d.alt}
+                className="shrink-0"
+              ></Image>
+              <h3 className="pb-2  pt-6 text-2xl font-semibold leading-8">
+                {d.title}
+              </h3>
+              <p className="text-base leading-6">{d.description}</p>
+            </div>
+          ))}
         </div>
 
         <div className="mb-[60px] mt-[120px] flex gap-72 ">

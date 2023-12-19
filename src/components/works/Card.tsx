@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const Card = () => {
   return (
@@ -14,10 +15,17 @@ const Card = () => {
           to search, choose and book for international flights more quickly,
           easily, and effectively online.
         </p>
-        <button className="inline-flex justify-center gap-2 rounded-xl border-[3px] border-solid border-[#573FEA] p-9 text-2xl font-semibold text-[#573FEA]">
-          <span>Read this casestudy</span>{' '}
-          <Image width={32} height={32} alt="arrow" src="/external-arrow.svg" />
-        </button>
+        <Link href="/casestudy">
+          <button className="inline-flex justify-center gap-2 rounded-xl border-[3px] border-solid border-[#573FEA] p-9 text-2xl font-semibold text-[#573FEA]">
+            <span>Read this casestudy</span>{' '}
+            <Image
+              width={32}
+              height={32}
+              alt="arrow"
+              src="/external-arrow.svg"
+            />
+          </button>
+        </Link>
       </div>
       <div className="flex-shrink-0 rounded-t-[20px] border border-b-0 border-solid border-black bg-white px-5 pt-9 shadow-workCardMobile">
         <Image width={360} height={500} src="/flight.svg" alt="flight" />

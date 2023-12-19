@@ -1,7 +1,17 @@
+import Navbar from '@/components/navbar'
 import React from 'react'
 
-const Casestudy = () => {
-  return <div>Casestudy</div>
+const CaseStudy = () => {
+  return (
+    <section>
+      <Navbar />
+
+      <div className="flex">
+        <div>sidebar</div>
+        <div></div>
+      </div>
+    </section>
+  )
 }
 
-export default Casestudy
+export default CaseStudy
