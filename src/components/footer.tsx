@@ -8,7 +8,7 @@ const footer = () => {
         <div>
           <Link href="/">
             <Image
-              src="./sush-white.svg"
+              src="/sush-white.svg"
               className="mx-auto pb-8"
               alt="logo"
               width={150}

@@ -15,7 +15,7 @@ const Card = () => {
           to search, choose and book for international flights more quickly,
           easily, and effectively online.
         </p>
-        <Link href="/casestudy">
+        <Link href="work/casestudy">
           <button className="inline-flex justify-center gap-2 rounded-xl border-[3px] border-solid border-[#573FEA] p-9 text-2xl font-semibold text-[#573FEA]">
             <span>Read this casestudy</span>{' '}
             <Image
