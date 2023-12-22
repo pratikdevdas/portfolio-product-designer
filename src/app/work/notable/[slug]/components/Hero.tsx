@@ -1,3 +1,4 @@
+import { NotableMentionPageElements } from '@/app/work/data'
 import Image from 'next/image'
 import React from 'react'
 
@@ -8,7 +9,13 @@ const Tags = ({ children }: { children: React.ReactNode }) => {
     </label>
   )
 }
-const EvenColumns = () => {
+const EvenColumns = ({
+  title,
+  description,
+}: {
+  title: string
+  description: string
+}) => {
   return (
     <div className="mx-auto flex max-w-largest gap-32 pb-40 pt-[160px]">
       <div className="flex-1">
@@ -17,11 +24,9 @@ const EvenColumns = () => {
           <Tags>Web</Tags>
         </div>
         <h1 className="mb-4 text-7xl font-semibold leading-[92px] -tracking-[1.6px]">
-          Cleartrip Bus
+          {title}
         </h1>
-        <p className="text-xl font-medium leading-8">
-          Rethinking the flow of the bus booking and post-booking experience
-        </p>
+        <p className="text-xl font-medium leading-8">{description}</p>
       </div>
       <div>
         <Image
@@ -35,10 +40,16 @@ const EvenColumns = () => {
   )
 }
 
-const Hero = () => {
+const Hero = ({
+  title,
+  children,
+}: {
+  title: string
+  children: NotableMentionPageElements
+}) => {
   return (
     <div>
-      <EvenColumns />
+      <EvenColumns title={title} description={children.description} />
     </div>
   )
 }

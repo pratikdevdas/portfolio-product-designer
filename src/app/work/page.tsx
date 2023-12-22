@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Footer from '@/components/footer'
 import Card from '@/components/works/Card'
 import data from './data'
-
+import Link from 'next/link'
 const page = () => {
   return (
     <div className="bg-[#F8F7F2]">
@@ -64,22 +64,21 @@ const page = () => {
 
         <div className="mx-auto grid max-w-largest auto-rows-min grid-cols-3 gap-x-5 gap-y-8">
           {data.map((d) => (
-            <div
-              key={d.key}
-              className="rounded-3xl border border-solid border-black bg-white p-6 shadow-workCard"
-            >
-              <Image
-                src={d.url}
-                width={450}
-                height={450}
-                alt={d.alt}
-                className="shrink-0"
-              ></Image>
-              <h3 className="pb-2  pt-6 text-2xl font-semibold leading-8">
-                {d.title}
-              </h3>
-              <p className="text-base leading-6">{d.description}</p>
-            </div>
+            <Link key={d.id} href={`work/notable/${d.id}`}>
+              <div className="rounded-3xl border border-solid border-black bg-white p-6 shadow-workCard">
+                <Image
+                  src={d.cardImageUrl}
+                  width={450}
+                  height={450}
+                  alt={d.cardImageAlt}
+                  className="shrink-0"
+                ></Image>
+                <h3 className="pb-2  pt-6 text-2xl font-semibold leading-8">
+                  {d.title}
+                </h3>
+                <p className="text-base leading-6">{d.description}</p>
+              </div>
+            </Link>
           ))}
         </div>
 
