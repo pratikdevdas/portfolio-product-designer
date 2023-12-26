@@ -18,7 +18,7 @@ const SectionImageRight = ({
   headingSpan,
 }: SectionProps) => {
   return (
-    <div className="mx-auto flex  max-w-largest items-center gap-[60px] py-[30px]">
+    <div className="mx-auto flex  max-w-largest items-center gap-[60px]">
       <div className="">
         <h1 className="mb-8 text-[90px] font-semibold leading-[112px] -tracking-[1.6px]">
           {heading} <span className="text-[#573FEA]">{headingSpan}</span>

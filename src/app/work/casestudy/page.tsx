@@ -77,6 +77,7 @@ const CaseStudy = () => {
               user-centered approach can improve the customer experience and
               build a competitive advantage for airlines.{' '}
             </p>
+            <p>Hey I am just testing copitlot</p>
             <div className="flex gap-7">
               <div className="shrink-0 basis-[600px]">
                 <p className="mb-2 text-2xl font-semibold leading-8 text-[#0E0D1A] opacity-70 ">

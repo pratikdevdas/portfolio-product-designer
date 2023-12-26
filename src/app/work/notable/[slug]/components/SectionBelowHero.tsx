@@ -1,4 +1,3 @@
-import { NotableMentionPageElements } from '@/app/work/data'
 import Image from 'next/image'
 import React from 'react'
 
@@ -17,26 +16,31 @@ const PhoneContainer = ({
 }
 
 const SectionBelowHero = ({
-  pageElements,
+  title,
+  contribution,
+  about,
+  aboutImageUrl,
+  aboutImageAlt,
 }: {
-  pageElements: NotableMentionPageElements
+  title: string
+  about: string
+  aboutImageUrl: string
+  aboutImageAlt: string
+  contribution: string
 }) => {
   return (
     <div className="mx-auto mb-[120px] bg-black text-xl font-normal leading-[30px] text-white">
       <div className="mx-auto max-w-largest py-20">
         <h2 className="pb-4 text-[32px] font-medium leading-[48px]">
-          About me
+          About {title}
         </h2>
-        <p className="pb-12">{pageElements.about}</p>
+        <p className="pb-12">{about}</p>
         <h2 className="pb-4 text-[32px] font-medium leading-[48px]">
           My contribution
         </h2>
-        <p>{pageElements.contribution}</p>
+        <p>{contribution}</p>
       </div>
-      <PhoneContainer
-        imageUrl={pageElements.aboutImageUrl}
-        imageAlt={pageElements.aboutImageAlt}
-      />
+      <PhoneContainer imageUrl={aboutImageUrl} imageAlt={aboutImageAlt} />
     </div>
   )
 }

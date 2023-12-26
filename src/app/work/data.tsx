@@ -4,7 +4,7 @@ interface NotableMentionBase {
   description: string
   cardImageUrl: string
   cardImageAlt: string
-  categories: ('mobile' | 'web' | 'general')[]
+  categories: ('mobile' | 'Web App' | 'general')[]
 }
 export interface NotableMentionPageElements {
   description: string
@@ -29,19 +29,27 @@ type NotableDataPageSections = {
   imageAlt: string
 }
 
-interface NotableMentionWeb extends NotableMentionBase {
-  kind: 'web'
-  pageElements: NotableMentionPageElements
-}
-
-interface NotableMentionMobile extends NotableMentionBase {
+export interface NotableMentionMobile extends NotableMentionBase {
   kind: 'mobile'
   pageElements: NotableMentionPageElements
 }
 
+interface NotableMentionWeb extends NotableMentionBase {
+  kind: 'web'
+  pageElements: Omit<
+    NotableMentionPageElements,
+    'aboutImageUrl' | 'aboutImageAlt'
+  >
+}
+
+// Omit<NotableMentionPageElements, 'aboutImageUrl' | 'aboutImageAlt' | 'sectionOne' | 'sectionTwo' | 'sectionThree'>
+
 interface NotableMentionGeneral extends NotableMentionBase {
   kind: 'general'
-  pageElements: NotableMentionPageElements
+  pageElements: Omit<
+    NotableMentionPageElements,
+    'aboutImageUrl' | 'aboutImageAlt'
+  >
 }
 
 export type NotableMention =
@@ -60,7 +68,7 @@ const data: NotableMention[] = [
     pageElements: {
       description:
         'Rethinking the flow of the bus booking and post-booking experience',
-      heroImageUrl: '/notable/cleartrip-bus.png',
+      heroImageUrl: '/notable/cleartrip-bus/cleartrip-bus.png',
       heroImageAlt: 'cleartrip',
       about:
         'This project was part of the Cleartrip bus team, with the goal of making it easier for users to book bus tickets. While the process of finding buses, checking their details, and making a booking may seem straightforward. We wanted to enhance the overall experience to ensure a smoother and more enjoyable journey for our users.',
@@ -81,8 +89,8 @@ const data: NotableMention[] = [
         headerSpan: 'screen',
         description:
           'This section lets users choose seats, review bus amenities, check cancellation policies, and read user reviews – a crucial and transparent feature for informed decision-making before boarding.',
-        imageAlt: '/notable/cleartrip-bus/cleartrip-section-right-second.png',
-        imageUrl: '',
+        imageAlt: 'second',
+        imageUrl: '/notable/cleartrip-bus/cleartrip-section-right-second.png',
       },
       sectionThree: {
         heading: 'Review your',
@@ -106,13 +114,13 @@ const data: NotableMention[] = [
     cardImageUrl: '/workpage/firstbox.svg',
     cardImageAlt: 'firstbox',
     kind: 'mobile',
-    categories: ['mobile', 'web'],
+    categories: ['mobile', 'Web App'],
     pageElements: {
       aboutImageUrl: '/notable/cleartrip-support/about.png',
       aboutImageAlt: 'About Image',
       description:
         'Platform for users to chat and seek assistance for their ongoing & past bookings',
-      heroImageUrl: '/notable/cleartrip-support/ .png',
+      heroImageUrl: '/notable/cleartrip-support/hero-image.gif',
       heroImageAlt: 'cleartrip',
       about:
         'Cleartrip`s support primarily relies on chatbots to swiftly address customer inquiries. This allows human agents to focus on more pressing matters. Cleartrip support serves as an inbox tool for users seeking assistance with upcoming or past bookings. Users can discuss their questions, and the chatbot will assist them in connecting with the customer support team.',
@@ -122,9 +130,9 @@ const data: NotableMention[] = [
         heading: 'Visibility',
         headerSpan: 'across app',
         description:
-          'The card displays all vital information, making it easy for users to compare and choose the right design. Emphasised essential details, ensuring users can quickly identify the most useful information for selecting the appropriate bus.',
+          'We aimed to enhance the visibility of Cleartrip support across the entire application, seamlessly integrating it from the user\'s "profile page" to the "My Trip" section. This strategic approach ensures that users can easily connect with support not only for significant concerns but also for addressing even the minutest issues they may encounter throughout their Cleartrip journey.',
         imageAlt: 'sectionImage',
-        imageUrl: '/notable/cleartrip-support/section-first.jpg',
+        imageUrl: '/notable/cleartrip-support/section-1.png',
       },
       sectionTwo: {
         heading: 'Easy to',
@@ -132,7 +140,7 @@ const data: NotableMention[] = [
         description:
           'It was designed to be effortlessly interactive, providing users with a seamless and user-friendly experience. Support bot is crafted to ensure simplicity in every interaction, making it easy for users to navigate and address their queries.',
         imageAlt: 'sectionTwo',
-        imageUrl: '/notable/cleartrip-support/section-second.jpg',
+        imageUrl: '/notable/cleartrip-support/section-2.png',
       },
       sectionThree: {
         heading: 'Self Server in',
@@ -140,7 +148,7 @@ const data: NotableMention[] = [
         description:
           'The chatbot worked best when customers wanted to cancel or reschedule their bookings and get a refund. We looked at lots of conversations about upcoming trips and figured out the main reasons people cancel. Then, we made a simple chatbot flow to make it easy for customers.',
         imageAlt: 'third section',
-        imageUrl: '/notable/cleartrip-support/section-third.jpg',
+        imageUrl: '/notable/cleartrip-support/section-3.png',
       },
       multiMobileImgUrl: '/notable/cleartrip-support/multimobiles.png',
       multiMobileImgAlt: 'multi',
@@ -154,9 +162,9 @@ const data: NotableMention[] = [
     cardImageUrl: '/workpage/firstbox.svg',
     cardImageAlt: 'firstbox',
     kind: 'mobile',
-    categories: ['mobile', 'web'],
+    categories: ['mobile', 'Web App'],
     pageElements: {
-      aboutImageUrl: '/notable/about-bus',
+      aboutImageUrl: '/notable/ctflexmax/about.png',
       aboutImageAlt: 'About Image',
       description:
         'CT FlexMax offers free cancel or reschedule on all domestic flight bookings',
@@ -172,14 +180,58 @@ const data: NotableMention[] = [
         description:
           'This initiative introduced fare families to Cleartrip, providing users with enhanced visibility and transparency during the flight ticket booking process. The aim was to guide users in making informed choices that align with their preferences and needs.',
         imageAlt: '',
-        imageUrl: '/notable/ctflexmax/section-one.jpg',
+        imageUrl: '/notable/ctflexmax/section-1.png',
       },
       sectionTwo: {
         heading: 'Post booking',
         headerSpan: 'is key',
         description:
           'The primary focus of this project was on post-booking activities, specifically addressing users who come to cancel or reschedule their flights based on their convenience and preferred dates. A key objective of the project was to ensure the full functionality of post-booking processes, making it seamless for users to modify their plans as needed.',
-        imageUrl: '/notable/ctflexmax/section-2.jpg',
+        imageUrl: '/notable/ctflexmax/section-2.png',
+        imageAlt: '',
+      },
+      sectionThree: {
+        heading: 'Conversion of',
+        headerSpan: 'charged user',
+        description:
+          'Introducing a feature in a product often poses a challenge for users to grasp, especially when they prioritize cost savings and are hesitant to invest in premium options. However, upon the launch of CT FlexMax, we witnessed an impressive average conversion rate of 21% in the initial months. Users were particularly drawn to the affordability of the offering.',
+        imageAlt: '',
+        imageUrl: '/notable/ctflexmax/section-3.png',
+      },
+    },
+  },
+  {
+    id: 'report-center',
+    title: 'Report Center',
+    description:
+      'Easily reconcile and gain insights. All reports accessible through one dashboard',
+    cardImageUrl: '/workpage/firstbox.svg',
+    cardImageAlt: 'firstbox',
+    kind: 'web',
+    categories: ['Web App'],
+    pageElements: {
+      description:
+        'Report Center is a simple and easy-to-use business intelligence tool that lets users learn and understand their company\'s data. It lets you view, modify and schedule reports with ease. Your reports are categorised into different catalogs that help you navigate and find reports conveniently.',
+      heroImageUrl: '/notable/ctflexmax/heroimage.gif',
+      heroImageAlt: 'cleartrip',
+      about:
+        'Report Center is a simple and easy-to-use business intelligence tool that lets users learn and understand their company\'s data. It lets you view, modify and schedule reports with ease. Your reports are categorised into different catalogs that help you navigate and find reports conveniently.',
+      contribution:
+        'I was the only designer, reporting to a design manager. - I played a role in optimizing report organization into user-friendly catalogs, facilitating convenient navigation for users.',
+      sectionOne: {
+        heading: 'Introduced',
+        headerSpan: 'Fare families',
+        description:
+          'This initiative introduced fare families to Cleartrip, providing users with enhanced visibility and transparency during the flight ticket booking process. The aim was to guide users in making informed choices that align with their preferences and needs.',
+        imageAlt: '',
+        imageUrl: '/notable/ctflexmax/section-1.png',
+      },
+      sectionTwo: {
+        heading: 'Post booking',
+        headerSpan: 'is key',
+        description:
+          'The primary focus of this project was on post-booking activities, specifically addressing users who come to cancel or reschedule their flights based on their convenience and preferred dates. A key objective of the project was to ensure the full functionality of post-booking processes, making it seamless for users to modify their plans as needed.',
+        imageUrl: '/notable/ctflexmax/section-2.png',
         imageAlt: '',
       },
       sectionThree: {

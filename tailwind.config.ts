@@ -21,8 +21,11 @@ const config: Config = {
       maxWidth: {
         largest: '1224px',
       },
+      transitionTimingFunction: {
+        'card-up': 'cubic-bezier(0, 0, 0, 2)',
+      },
     },
   },
-  plugins: [],
+  plugins: [require('tailwindcss-3d')],
 }
 export default config

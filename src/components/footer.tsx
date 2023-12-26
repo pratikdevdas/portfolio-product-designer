@@ -4,7 +4,7 @@ import React from 'react'
 const footer = () => {
   return (
     <div className="relative bg-[#0E0D1A] pb-[304px]  pt-[530px]">
-      <div className="absolute left-1/2 top-0 flex -translate-x-1/2 -translate-y-1/2 flex-col items-center rounded-3xl bg-[#573FEA] px-[316px] py-[56px] text-center text-white">
+      <div className="absolute left-1/2 top-0 flex flex-col items-center rounded-3xl bg-[#573FEA] px-[316px] py-[56px] text-center text-white -translate-x-1/2 -translate-y-1/2">
         <div>
           <Link href="/">
             <Image
