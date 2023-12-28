@@ -34,14 +34,23 @@ export interface NotableMentionMobile extends NotableMentionBase {
   pageElements: NotableMentionPageElements
 }
 
+
+interface PageElementsWeb extends Omit<
+  NotableMentionPageElements,
+  'aboutImageUrl' | 'aboutImageAlt' | 'sectionOne' | 'sectionTwo' | 'sectionThree'
+> {
+  sectionImages: sectionImagesWeb[]
+}
 interface NotableMentionWeb extends NotableMentionBase {
   kind: 'web'
-  pageElements: Omit<
-    NotableMentionPageElements,
-    'aboutImageUrl' | 'aboutImageAlt'
-  >
+  pageElements: PageElementsWeb
 }
 
+interface sectionImagesWeb {
+  imageUrl: string
+  imageAlt: string
+  id: number
+}
 // Omit<NotableMentionPageElements, 'aboutImageUrl' | 'aboutImageAlt' | 'sectionOne' | 'sectionTwo' | 'sectionThree'>
 
 interface NotableMentionGeneral extends NotableMentionBase {
@@ -61,7 +70,7 @@ const data: NotableMention[] = [
   {
     id: 'cleartrip-bus',
     title: 'Cleartrip Bus',
-    cardImageUrl: '/workpage/firstbox.svg',
+    cardImageUrl: '/notable/cleartrip-bus/card-image.png',
     cardImageAlt: 'firstbox',
     description:
       'Creating a user-friendly and convenient platform for buying bus tickets.',
@@ -111,7 +120,7 @@ const data: NotableMention[] = [
     title: 'Cleartrip support',
     description:
       'Suite to view and access various benefits applicable when booking flights and hotels',
-    cardImageUrl: '/workpage/firstbox.svg',
+    cardImageUrl: '/notable/cleartrip-support/card-image.png',
     cardImageAlt: 'firstbox',
     kind: 'mobile',
     categories: ['mobile', 'Web App'],
@@ -159,7 +168,7 @@ const data: NotableMention[] = [
     title: 'CT-Flexmax',
     description:
       'Platform for users to chat and seek assistance for their ongoing & past bookings',
-    cardImageUrl: '/workpage/firstbox.svg',
+    cardImageUrl: '/notable/ctflexmax/card-image.svg',
     cardImageAlt: 'firstbox',
     kind: 'mobile',
     categories: ['mobile', 'Web App'],
@@ -205,43 +214,26 @@ const data: NotableMention[] = [
     title: 'Report Center',
     description:
       'Easily reconcile and gain insights. All reports accessible through one dashboard',
-    cardImageUrl: '/workpage/firstbox.svg',
+    cardImageUrl: '/notable/reportcenter/card-image.svg',
     cardImageAlt: 'firstbox',
     kind: 'web',
     categories: ['Web App'],
     pageElements: {
       description:
-        'Report Center is a simple and easy-to-use business intelligence tool that lets users learn and understand their company\'s data. It lets you view, modify and schedule reports with ease. Your reports are categorised into different catalogs that help you navigate and find reports conveniently.',
+        'Easily reconcile and gain insights. All reports accessible through one dashboard',
       heroImageUrl: '/notable/ctflexmax/heroimage.gif',
       heroImageAlt: 'cleartrip',
       about:
         'Report Center is a simple and easy-to-use business intelligence tool that lets users learn and understand their company\'s data. It lets you view, modify and schedule reports with ease. Your reports are categorised into different catalogs that help you navigate and find reports conveniently.',
       contribution:
         'I was the only designer, reporting to a design manager. - I played a role in optimizing report organization into user-friendly catalogs, facilitating convenient navigation for users.',
-      sectionOne: {
-        heading: 'Introduced',
-        headerSpan: 'Fare families',
-        description:
-          'This initiative introduced fare families to Cleartrip, providing users with enhanced visibility and transparency during the flight ticket booking process. The aim was to guide users in making informed choices that align with their preferences and needs.',
-        imageAlt: '',
-        imageUrl: '/notable/ctflexmax/section-1.png',
-      },
-      sectionTwo: {
-        heading: 'Post booking',
-        headerSpan: 'is key',
-        description:
-          'The primary focus of this project was on post-booking activities, specifically addressing users who come to cancel or reschedule their flights based on their convenience and preferred dates. A key objective of the project was to ensure the full functionality of post-booking processes, making it seamless for users to modify their plans as needed.',
-        imageUrl: '/notable/ctflexmax/section-2.png',
-        imageAlt: '',
-      },
-      sectionThree: {
-        heading: 'Conversion of',
-        headerSpan: 'charged user',
-        description:
-          'Introducing a feature in a product often poses a challenge for users to grasp, especially when they prioritize cost savings and are hesitant to invest in premium options. However, upon the launch of CT FlexMax, we witnessed an impressive average conversion rate of 21% in the initial months. Users were particularly drawn to the affordability of the offering.',
-        imageAlt: '',
-        imageUrl: '/notable/ctflexmax/section-3.png',
-      },
+      sectionImages: [
+        {
+          id: 1,
+          imageUrl: '',
+          imageAlt: '',
+        }
+      ]
     },
   },
 ]
