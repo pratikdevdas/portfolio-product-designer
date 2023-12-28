@@ -4,7 +4,7 @@ interface NotableMentionBase {
   description: string
   cardImageUrl: string
   cardImageAlt: string
-  categories: ('mobile' | 'Web App' | 'general')[]
+  categories: ('Mobile' | 'Web App' | 'general')[]
 }
 export interface NotableMentionPageElements {
   description: string
@@ -34,11 +34,15 @@ export interface NotableMentionMobile extends NotableMentionBase {
   pageElements: NotableMentionPageElements
 }
 
-
-interface PageElementsWeb extends Omit<
-  NotableMentionPageElements,
-  'aboutImageUrl' | 'aboutImageAlt' | 'sectionOne' | 'sectionTwo' | 'sectionThree'
-> {
+interface PageElementsWeb
+  extends Omit<
+    NotableMentionPageElements,
+    | 'aboutImageUrl'
+    | 'aboutImageAlt'
+    | 'sectionOne'
+    | 'sectionTwo'
+    | 'sectionThree'
+  > {
   sectionImages: sectionImagesWeb[]
 }
 interface NotableMentionWeb extends NotableMentionBase {
@@ -46,12 +50,11 @@ interface NotableMentionWeb extends NotableMentionBase {
   pageElements: PageElementsWeb
 }
 
-interface sectionImagesWeb {
+export interface sectionImagesWeb {
   imageUrl: string
   imageAlt: string
   id: number
 }
-// Omit<NotableMentionPageElements, 'aboutImageUrl' | 'aboutImageAlt' | 'sectionOne' | 'sectionTwo' | 'sectionThree'>
 
 interface NotableMentionGeneral extends NotableMentionBase {
   kind: 'general'
@@ -112,7 +115,7 @@ const data: NotableMention[] = [
       multiMobileImgUrl: '/notable/cleartrip-bus/multi-mobiles.png',
       multiMobileImgAlt: 'multi',
     },
-    categories: ['mobile'],
+    categories: ['Mobile'],
     kind: 'mobile',
   },
   {
@@ -123,7 +126,7 @@ const data: NotableMention[] = [
     cardImageUrl: '/notable/cleartrip-support/card-image.png',
     cardImageAlt: 'firstbox',
     kind: 'mobile',
-    categories: ['mobile', 'Web App'],
+    categories: ['Mobile', 'Web App'],
     pageElements: {
       aboutImageUrl: '/notable/cleartrip-support/about.png',
       aboutImageAlt: 'About Image',
@@ -171,7 +174,7 @@ const data: NotableMention[] = [
     cardImageUrl: '/notable/ctflexmax/card-image.svg',
     cardImageAlt: 'firstbox',
     kind: 'mobile',
-    categories: ['mobile', 'Web App'],
+    categories: ['Mobile', 'Web App'],
     pageElements: {
       aboutImageUrl: '/notable/ctflexmax/about.png',
       aboutImageAlt: 'About Image',
@@ -221,7 +224,7 @@ const data: NotableMention[] = [
     pageElements: {
       description:
         'Easily reconcile and gain insights. All reports accessible through one dashboard',
-      heroImageUrl: '/notable/ctflexmax/heroimage.gif',
+      heroImageUrl: '/notable/reportcenter/hero-image.png',
       heroImageAlt: 'cleartrip',
       about:
         'Report Center is a simple and easy-to-use business intelligence tool that lets users learn and understand their company\'s data. It lets you view, modify and schedule reports with ease. Your reports are categorised into different catalogs that help you navigate and find reports conveniently.',
@@ -230,10 +233,31 @@ const data: NotableMention[] = [
       sectionImages: [
         {
           id: 1,
-          imageUrl: '',
-          imageAlt: '',
-        }
-      ]
+          imageUrl: '/notable/reportcenter/section-1.png',
+          imageAlt: 'reportcenter',
+        },
+
+        {
+          id: 2,
+          imageUrl: '/notable/reportcenter/section-2.png',
+          imageAlt: 'reportcenter',
+        },
+        {
+          id: 3,
+          imageUrl: '/notable/reportcenter/section-3.png',
+          imageAlt: 'reportcenter',
+        },
+        {
+          id: 4,
+          imageUrl: '/notable/reportcenter/section-4.png',
+          imageAlt: 'reportcenter',
+        },
+        {
+          id: 5,
+          imageUrl: '/notable/reportcenter/section-5.png',
+          imageAlt: 'reportcenter',
+        },
+      ],
     },
   },
 ]

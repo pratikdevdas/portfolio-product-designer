@@ -6,6 +6,8 @@ import SectionImageRight from './components/SectionImageRight'
 import MultiMobileContainer from './components/MultiMobileContainer'
 import SimilarCards from './components/SimilarCards'
 import data, { NotableMention } from '../../data'
+import SectionBelowHeroWeb from './components/Web/SectionBelowHero'
+import SectionImageShow from './components/Web/SectionImageShow'
 
 const page = ({ params }: { params: { slug: string } }) => {
   console.log(params.slug)
@@ -33,17 +35,27 @@ const page = ({ params }: { params: { slug: string } }) => {
 export default page
 
 const Part = ({ dataToDisplay }: { dataToDisplay: NotableMention }) => {
+  const { about, contribution } = dataToDisplay.pageElements
+
   switch (dataToDisplay.kind) {
   case 'mobile':
     // eslint-disable-next-line no-case-declarations
-    const pageElements = dataToDisplay.pageElements
+    let {
+      aboutImageUrl,
+      aboutImageAlt,
+      sectionOne,
+      sectionTwo,
+      sectionThree,
+      multiMobileImgAlt,
+      multiMobileImgUrl,
+    } = dataToDisplay.pageElements
     return (
       <div>
         <SectionBelowHero
-          about={pageElements.about}
-          aboutImageUrl={pageElements.aboutImageUrl}
-          aboutImageAlt={pageElements.aboutImageAlt}
-          contribution={pageElements.contribution}
+          about={about}
+          aboutImageUrl={aboutImageUrl}
+          aboutImageAlt={aboutImageAlt}
+          contribution={contribution}
           title={dataToDisplay.title}
         />
         <div
@@ -51,11 +63,11 @@ const Part = ({ dataToDisplay }: { dataToDisplay: NotableMention }) => {
         >
           <SectionImageLeft
             id={dataToDisplay.id}
-            heading={pageElements.sectionOne.heading}
-            headingSpan={pageElements.sectionOne.headerSpan}
-            description={pageElements.sectionOne.description}
-            imageUrl={pageElements.sectionOne.imageUrl}
-            imageAlt={pageElements.sectionOne.imageAlt}
+            heading={sectionOne.heading}
+            headingSpan={sectionOne.headerSpan}
+            description={sectionOne.description}
+            imageUrl={sectionOne.imageUrl}
+            imageAlt={sectionOne.imageAlt}
           />
         </div>
         <div
@@ -65,31 +77,56 @@ const Part = ({ dataToDisplay }: { dataToDisplay: NotableMention }) => {
         >
           <SectionImageRight
             id={dataToDisplay.id}
-            heading={pageElements.sectionTwo.heading}
-            headingSpan={pageElements.sectionTwo.headerSpan}
-            description={pageElements.sectionTwo.description}
-            imageUrl={pageElements.sectionTwo.imageUrl}
-            imageAlt={pageElements.sectionTwo.imageAlt}
+            heading={sectionTwo.heading}
+            headingSpan={sectionTwo.headerSpan}
+            description={sectionTwo.description}
+            imageUrl={sectionTwo.imageUrl}
+            imageAlt={sectionTwo.imageAlt}
           />
         </div>
         <SectionImageLeft
           id={dataToDisplay.id}
-          heading={pageElements.sectionThree.heading}
-          headingSpan={pageElements.sectionThree.headerSpan}
-          description={pageElements.sectionThree.description}
-          imageUrl={pageElements.sectionThree.imageUrl}
-          imageAlt={pageElements.sectionThree.imageAlt}
+          heading={sectionThree.heading}
+          headingSpan={sectionThree.headerSpan}
+          description={sectionThree.description}
+          imageUrl={sectionThree.imageUrl}
+          imageAlt={sectionThree.imageAlt}
         />
-        {pageElements.multiMobileImgUrl && pageElements.multiMobileImgAlt && (
+        {multiMobileImgUrl && multiMobileImgAlt && (
           <MultiMobileContainer
-            imageUrl={pageElements.multiMobileImgUrl}
-            imageAlt={pageElements.multiMobileImgAlt}
+            imageUrl={multiMobileImgUrl}
+            imageAlt={multiMobileImgAlt}
           />
         )}
       </div>
     )
   case 'web':
-    return <div></div>
+    // eslint-disable-next-line no-case-declarations
+    let { sectionImages } = dataToDisplay.pageElements
+    return (
+      <div>
+        <SectionBelowHeroWeb
+          about={about}
+          contribution={contribution}
+          title={dataToDisplay.title}
+        />
+        <SectionImageShow sectionImages={sectionImages} />
+      </div>
+    )
+  case 'general':
+    // eslint-disable-next-line no-case-declarations
+    // let { sectionImages } = dataToDisplay.pageElements
+    return (
+      <div>
+        <SectionBelowHeroWeb
+          about={about}
+          contribution={contribution}
+          title={dataToDisplay.title}
+        />
+        {/* <SectionImageShow sectionImages={sectionImages} /> */}
+      </div>
+    )
+
   default:
   }
 }
