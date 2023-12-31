@@ -21,6 +21,7 @@ const page = ({ params }: { params: { slug: string } }) => {
     <div>
       <Hero
         title={dataToDisplay.title}
+        categories={dataToDisplay.categories}
         description={dataToDisplay.pageElements.description}
         imageUrl={dataToDisplay.pageElements.heroImageUrl}
         imageAlt={dataToDisplay.pageElements.heroImageAlt}

@@ -11,11 +11,13 @@ const Tags = ({ children }: { children: React.ReactNode }) => {
 
 const Hero = ({
   title,
+  categories,
   description,
   imageUrl,
   imageAlt,
 }: {
   title: string
+  categories: string[]
   description: string
   imageUrl: string
   imageAlt: string
@@ -25,8 +27,7 @@ const Hero = ({
       <div className="mx-auto flex max-w-largest gap-32 pb-40 pt-[120px]">
         <div className="flex-1">
           <div className="mb-8 flex gap-2">
-            <Tags>Mobile</Tags>
-            <Tags>Web</Tags>
+            {categories.map((t: string) => <Tags key={t}>{t}</Tags>)}
           </div>
           <h1 className="mb-4 text-7xl font-semibold leading-[92px] -tracking-[1.6px]">
             {title}

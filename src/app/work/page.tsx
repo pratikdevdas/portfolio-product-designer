@@ -2,10 +2,12 @@ import Navbar from '@/components/navbar'
 import React from 'react'
 import Image from 'next/image'
 import Footer from '@/components/footer'
-import Card from '@/components/works/Card'
+import Card from '@/components/works/CardMobile'
 import data from './data'
 import Link from 'next/link'
-const page = () => {
+const Work = () => {
+
+  // const pathname = usePathname()
   return (
     <div className="bg-[#F8F7F2]">
       <Navbar />
@@ -51,15 +53,21 @@ const page = () => {
           <div className="cursor-pointer rounded-[72px] border-2 border-[#573FEA] bg-[#DFDAFF] px-6	 py-3 text-[#573FEA]">
             All Mentions
           </div>
-          <div className="cursor-pointer  rounded-[72px] border border-[#B5B1B1] bg-white px-6 py-3">
-            Web
-          </div>
-          <div className="cursor-pointer  rounded-[72px] border border-[#B5B1B1] bg-white px-6 py-3">
-            Mobile
-          </div>
-          <div className="cursor-pointer  rounded-[72px] border border-[#B5B1B1] bg-white px-6 py-3">
-            General
-          </div>
+          <Link href='?type=web' scroll={false}>
+            <div className="cursor-pointer  rounded-[72px] border border-[#B5B1B1] bg-white px-6 py-3">
+              Web
+            </div>
+          </Link>
+          <Link href='?type=mobile' scroll={false}>
+            <div className="cursor-pointer  rounded-[72px] border border-[#B5B1B1] bg-white px-6 py-3">
+              Mobile
+            </div>
+          </Link>
+          <Link href='?type=general' scroll={false}>
+            <div className="cursor-pointer  rounded-[72px] border border-[#B5B1B1] bg-white px-6 py-3">
+              General
+            </div>
+          </Link>
         </div>
 
         <div className="mx-auto grid max-w-largest auto-rows-min grid-cols-3 gap-x-5 gap-y-8">
@@ -102,7 +110,7 @@ const page = () => {
         </div>
 
         <div className="mx-auto grid max-w-largest auto-rows-min grid-cols-3 gap-x-5 gap-y-8">
-          {data.map((d) => (
+          {data.slice(0,3).map((d) => (
             <Link key={d.id} href={`work/notable/${d.id}`}>
               <div className="rounded-3xl bg-[#573FEA] hover:transition-all">
                 <div className="rounded-3xl border border-solid border-black bg-white p-6 shadow-workCard duration-500 ease-card-up transform-style-3d translate-z-0 skew-x-0 skew-y-0 scale3d-100 hover:-translate-y-[1.25rem] hover:translate-x-[0.5rem] hover:rotate-2">
@@ -202,4 +210,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Work

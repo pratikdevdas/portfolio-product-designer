@@ -260,6 +260,49 @@ const data: NotableMention[] = [
       ],
     },
   },
+  {
+    id: 'power-center',
+    title: 'Power Center',
+    description:
+      'Advanced insights on your products, business, and customers',
+    cardImageUrl: '/notable/powercenter/card-image.svg',
+    cardImageAlt: 'firstbox',
+    kind: 'web',
+    categories: ['Web App'],
+    pageElements: {
+      description:
+        'Advanced insights on your products, business, and customers',
+      heroImageUrl: '/notable/powercenter/heroimage.png',
+      heroImageAlt: 'reportcenter',
+      about:
+        'Power Center is an analytics dashboard that provides advanced insights on products, businesses, and customers. It provides trends across key metrics that can be used to make appropriate and timely business decisions. It also equips the user with the flexibility to slice data across multiple dimensions (provided in the form of filter criteria) such as - date range, product type, etc. All this with the added advantage of intelligent visualisation techniques to make insight gathering easier.',
+      contribution:
+        'I was the only designer, reporting to a design manager. - I created designs that laid some of the foundation for the power center user flows. I made sure that the team could easily grasp the complex technical concepts and graphs understanding.',
+      sectionImages: [
+        {
+          id: 1,
+          imageUrl: '/notable/powercenter/section-1.png',
+          imageAlt: 'powercenter',
+        },
+
+        {
+          id: 2,
+          imageUrl: '/notable/powercenter/section-2.png',
+          imageAlt: 'powercenter',
+        },
+        {
+          id: 3,
+          imageUrl: '/notable/powercenter/section-3.png',
+          imageAlt: 'powercenter',
+        },
+        {
+          id: 4,
+          imageUrl: '/notable/powercenter/section-4.png',
+          imageAlt: 'powercenter',
+        },
+      ],
+    },
+  },
 ]
 
 export default data
