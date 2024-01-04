@@ -1,5 +1,5 @@
 import CardMobile from './works/CardMobile'
-import CardDesktop from './works/CardDesktop'
+// import CardDesktop from './works/CardDesktop'
 
 const works = () => {
   return (
@@ -10,7 +10,7 @@ const works = () => {
       <div className="cardcontainer | flex flex-col gap-10 ">
         {/* card start */}
         <CardMobile />
-        <CardDesktop />
+        {/* <CardDesktop /> */}
       </div>
     </section>
   )

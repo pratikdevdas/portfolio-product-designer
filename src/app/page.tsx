@@ -7,8 +7,6 @@ export default function Home() {
   return (
     <>
       <header>
-        {/* topbar */}
-
         <Navbar />
       </header>
       <section className="mx-auto max-w-5xl pb-40 pt-32 text-center">

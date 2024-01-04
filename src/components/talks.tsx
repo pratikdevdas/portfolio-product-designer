@@ -70,66 +70,65 @@ const talks = () => {
         </div>
         <div className="rounded-3xl border border-solid border-black bg-white p-6 shadow-[4px_4px_0px_0px_#573FEA]">
           <Image
-            src="/kiitxshu.png"
+            src="/home/gdsc.png"
             width={746}
             height={508}
             alt="designboat"
             className="shrink-0"
           ></Image>
           <h3 className="pt-4 text-xl font-semibold">
-            Design Optimisation: Improving user experience by making design more
-            efficient and effective.{' '}
+            Let&apos;s Talk About: Digital Product Design
           </h3>
         </div>
         <div className="rounded-3xl border border-solid border-black bg-white p-6 shadow-[4px_4px_0px_0px_#573FEA]">
           <Image
-            src="/kiitxshu.png"
+            src="/home/suneyellow.png"
             width={746}
             height={508}
             alt="designboat"
             className="shrink-0"
           ></Image>
           <h3 className="pt-4 text-xl font-semibold">
-            Design Optimisation: Improving user experience{' '}
+            A Change in Perspective: Shifting focus from purely functional to
+            user-centered approach in design
           </h3>
         </div>
         <div className="rounded-3xl border border-solid border-black bg-white p-6 shadow-[4px_4px_0px_0px_#573FEA]">
           <Image
-            src="/kiitxshu.png"
+            src="/home/Mworkshop.png"
             width={746}
             height={508}
             alt="designboat"
             className="shrink-0"
           ></Image>
           <h3 className="pt-4 text-xl font-semibold">
-            Design Optimisation: Improving user experience by making design more
-            efficient and effective.{' '}
+            Designing for B2B vs B2C: How they differ based on their target
+            consumers&apos; and preferences
           </h3>
         </div>
         <div className="rounded-3xl border border-solid border-black bg-white p-6 shadow-[4px_4px_0px_0px_#573FEA]">
           <Image
-            src="/kiitxshu.png"
+            src="/home/lpu.png"
             width={746}
             height={508}
             alt="designboat"
             className="shrink-0"
           ></Image>
           <h3 className="pt-4 text-xl font-semibold">
-            Design Optimisation: Improving user experience by making design more
-            efficient and effective.{' '}
+            Accessibility in Product Design: Designing for All Users
           </h3>
         </div>
         <div className="rounded-3xl border border-solid border-black bg-white p-6 shadow-[4px_4px_0px_0px_#573FEA]">
           <Image
-            src="/kiitxshu.png"
+            src="/home/amrita.png"
             width={746}
             height={508}
             alt="designboat"
             className="shrink-0"
           ></Image>
           <h3 className="pt-4 text-xl font-semibold">
-            Design Optimisation: Improving user experience by making design more
-            efficient and effective.{' '}
+            Designing for Emotional Engagement: Creating Memorable User
+            Experiences
           </h3>
         </div>
         {/* testimonial */}
@@ -162,23 +161,76 @@ const talks = () => {
                 Shristi University, Bangalore
               </p>
             </div>
-            <div>3</div>
-            <div>4</div>
-            <div className="w-full">
+            <div>
               <Image
-                src="/jniit.svg"
-                width={90}
-                height={100}
+                src="/home/sristi.svg"
+                width={74}
+                height={58}
                 className="mx-auto"
                 alt="college-image"
               />
               <p className="pt-2 text-center font-bold">
-                Ecell, NIT Jamshedpur
+                Shristi Media Society
               </p>
             </div>
-            <div>6</div>
-            <div>7</div>
-            <div>8</div>
+            <div>
+              <Image
+                src="/home/ngage.svg"
+                width={140}
+                height={58}
+                className="mx-auto"
+                alt="college-image"
+              />
+              <p className="pt-2 text-center font-bold">Ngage Media</p>
+            </div>
+
+            <div className="w-full">
+              <Image
+                src="/home/gurughasidas.svg"
+                width={58}
+                height={58}
+                className="mx-auto"
+                alt="college-image"
+              />
+              <p className="pt-2 text-center font-bold">
+                Guru Ghasidas Vishwavidyalaya, Bilaspur
+              </p>
+            </div>
+            <div className="w-full">
+              <Image
+                src="/home/lpulogo.svg"
+                width={58}
+                height={58}
+                quality={100}
+                className="mx-auto"
+                alt="college-image"
+              />
+              <p className="pt-2 text-center font-bold">
+                Lovely Professional University, Ludiana
+              </p>
+            </div>
+            <div className="w-full">
+              <Image
+                src="/home/amrita-logo.png"
+                width={207}
+                height={58}
+                className="mx-auto"
+                alt="college-image"
+              />
+              <p className="pt-2 text-center font-bold">
+                Amrita Vishwa Vidyapeetham, Bangalore
+              </p>
+            </div>
+            <div className="w-full">
+              <Image
+                src="/home/gdg.svg"
+                width={58}
+                height={59}
+                className="mx-auto"
+                alt="college-image"
+              />
+              <p className="pt-2 text-center font-bold">GDG Kolkata</p>
+            </div>
           </div>
         </div>
       </div>
