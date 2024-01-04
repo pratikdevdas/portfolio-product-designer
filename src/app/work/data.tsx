@@ -227,7 +227,7 @@ const data: NotableMention[] = [
       heroImageUrl: '/notable/reportcenter/hero-image.png',
       heroImageAlt: 'cleartrip',
       about:
-        "Report Center is a simple and easy-to-use business intelligence tool that lets users learn and understand their company's data. It lets you view, modify and schedule reports with ease. Your reports are categorised into different catalogs that help you navigate and find reports conveniently.",
+        'Report Center is a simple and easy-to-use business intelligence tool that lets users learn and understand their company\'s data. It lets you view, modify and schedule reports with ease. Your reports are categorised into different catalogs that help you navigate and find reports conveniently.',
       contribution:
         'I was the only designer, reporting to a design manager. - I played a role in optimizing report organization into user-friendly catalogs, facilitating convenient navigation for users.',
       sectionImages: [

@@ -11,16 +11,16 @@ const CaseStudy = () => {
     <section>
       <Navbar />
 
-      <div className="mx-auto mt-[102px] flex items-start max-w-largest gap-6 text-xl leading-[30px]">
-        <div className="w-[288px] shrink-0 sticky top-6">
-          <h2 className="font-semibold mb-8">In This Casestudy</h2>
-          <div className="flex-col justify-start items-start gap-3.5 inline-flex">
+      <div className="mx-auto mt-[102px] flex max-w-largest items-start gap-6 text-xl leading-[30px]">
+        <div className="sticky top-6 w-[288px] shrink-0">
+          <h2 className="mb-8 font-semibold">In This Casestudy</h2>
+          <div className="inline-flex flex-col items-start justify-start gap-3.5">
             <Link href="#introductions">Introduction</Link>
             <Link href="#context">Context</Link>
             <Link href="#problem">Problem</Link>
             <Link href="#finalsolution">Final Solution</Link>
             <Link href="#research">Research</Link>
-            <Link href="#challenge" >Challenge</Link>
+            <Link href="#challenge">Challenge</Link>
             <Link href="#finaldesign">Final Design</Link>
             <Link href="#outcome">Outcome</Link>
             <Link href="#closingnot">Closing Notes</Link>
@@ -171,7 +171,7 @@ const CaseStudy = () => {
             </p>
           </div>
 
-          <div className="problem | mb-24" id='problem'>
+          <div className="problem | mb-24" id="problem">
             <h2 className="mb-8 text-5xl font-bold leading-[56px]">Problem</h2>
             <p className=" mb-6">
               The current design for international flight book ing poses several
@@ -200,9 +200,11 @@ const CaseStudy = () => {
                   1
                 </div>
                 <div className="rounded-2xl text-base text-[#0E0D1A]">
-                  <span className='font-bold'>The departure, arrival, and duration</span> times are easily confused
-                  as all three numbers appear similar and can be easily
-                  overlooked.
+                  <span className="font-bold">
+                    The departure, arrival, and duration
+                  </span>{' '}
+                  times are easily confused as all three numbers appear similar
+                  and can be easily overlooked.
                 </div>
               </div>
               <div className="row-span-3 row-start-5 flex h-min gap-4 rounded-2xl bg-[#F3F1EB] p-4 ">
@@ -210,9 +212,9 @@ const CaseStudy = () => {
                   2
                 </div>
                 <div className="rounded-2xl text-base text-[#0E0D1A]">
-                  Users find it <span className="font-bold">
-                     challenging to intuitively understand Airport
-                    codes
+                  Users find it{' '}
+                  <span className="font-bold">
+                    challenging to intuitively understand Airport codes
                   </span>{' '}
                 </div>
               </div>
@@ -221,8 +223,8 @@ const CaseStudy = () => {
                   3
                 </div>
                 <div className="h-min rounded-2xl text-base text-[#0E0D1A]">
-                  <span className="font-bold">Unfamiliar icons</span> were challenging for users to grasp and
-                  understand.
+                  <span className="font-bold">Unfamiliar icons</span> were
+                  challenging for users to grasp and understand.
                 </div>
               </div>
               <div className="col-start-2 row-span-4 flex gap-4 rounded-2xl bg-[#F3F1EB] p-4">
@@ -230,9 +232,11 @@ const CaseStudy = () => {
                   4
                 </div>
                 <div className="rounded-2xl text-base text-[#0E0D1A]">
-                  <span className="font-bold">Crucial information is tucked away in the details page,</span> and
-                  accessing it involves excessive scrolling due to the length of
-                  the page.
+                  <span className="font-bold">
+                    Crucial information is tucked away in the details page,
+                  </span>{' '}
+                  and accessing it involves excessive scrolling due to the
+                  length of the page.
                 </div>
               </div>
               <div className="flex gap-4 rounded-2xl bg-[#F3F1EB] p-4 ">
@@ -240,8 +244,10 @@ const CaseStudy = () => {
                   5
                 </div>
                 <div className="rounded-2xl text-base text-[#0E0D1A]">
-                  <span className="font-bold">The arrangement and depth of filters</span> make it challenging to
-                  easily navigate and comprehend.
+                  <span className="font-bold">
+                    The arrangement and depth of filters
+                  </span>{' '}
+                  make it challenging to easily navigate and comprehend.
                 </div>
               </div>
               <div className="flex gap-4 rounded-2xl bg-[#F3F1EB] p-4   ">
@@ -249,8 +255,11 @@ const CaseStudy = () => {
                   6
                 </div>
                 <div className="rounded-2xl text-base text-[#0E0D1A]">
-                  Users find it <span className="font-bold">difficult to grasp the sorting options</span> due to
-                  lack of intuitiveness & visibility.
+                  Users find it{' '}
+                  <span className="font-bold">
+                    difficult to grasp the sorting options
+                  </span>{' '}
+                  due to lack of intuitiveness & visibility.
                 </div>
               </div>
             </div>
@@ -356,7 +365,9 @@ const CaseStudy = () => {
                   1
                 </div>
                 <div className="rounded-2xl text-base text-[#0E0D1A]">
-                The departure & arrival times are shown side by side, and the duration is clearly visible with information on where flights have layovers.
+                  The departure & arrival times are shown side by side, and the
+                  duration is clearly visible with information on where flights
+                  have layovers.
                 </div>
               </div>
               <div className="row-span-3 row-start-5 flex h-min gap-4 rounded-2xl bg-[#F3F1EB] p-4 ">
@@ -364,7 +375,8 @@ const CaseStudy = () => {
                   2
                 </div>
                 <div className="rounded-2xl text-base text-[#0E0D1A]">
-                Icons are accompanied by text, making it simpler for users to grasp and understand.
+                  Icons are accompanied by text, making it simpler for users to
+                  grasp and understand.
                 </div>
               </div>
               <div className="row-span-3 flex h-min gap-4 rounded-2xl bg-[#F3F1EB] p-4">
@@ -372,7 +384,8 @@ const CaseStudy = () => {
                   3
                 </div>
                 <div className="h-min rounded-2xl text-base text-[#0E0D1A]">
-                Sort options to arrange flight sequences, making it much easier for comprehension.
+                  Sort options to arrange flight sequences, making it much
+                  easier for comprehension.
                 </div>
               </div>
               <div className="col-start-2 row-span-4 flex gap-4 rounded-2xl bg-[#F3F1EB] p-4">
@@ -380,14 +393,18 @@ const CaseStudy = () => {
                   4
                 </div>
                 <div className="rounded-2xl text-base text-[#0E0D1A]">
-                The primary filters are displayed upfront, and the selected filters are easily visible, making it simple for users to add or remove them               </div>
+                  The primary filters are displayed upfront, and the selected
+                  filters are easily visible, making it simple for users to add
+                  or remove them{' '}
+                </div>
               </div>
               <div className="flex gap-4 rounded-2xl bg-[#F3F1EB] p-4 ">
                 <div className="items  flex h-[24px]  w-[24px] shrink-0 items-center justify-center self-start rounded-[84px] bg-[#289203] text-[15px] font-bold text-white">
                   5
                 </div>
                 <div className="rounded-2xl text-base text-[#0E0D1A]">
-                The search page displays the final amount users will receive after applying the coupon.
+                  The search page displays the final amount users will receive
+                  after applying the coupon.
                 </div>
               </div>
               <div className="flex gap-4 rounded-2xl bg-[#F3F1EB] p-4   ">
@@ -395,7 +412,8 @@ const CaseStudy = () => {
                   6
                 </div>
                 <div className="rounded-2xl text-base text-[#0E0D1A]">
-                Displays flights with similar prices, but they may vary in stops or duration.
+                  Displays flights with similar prices, but they may vary in
+                  stops or duration.
                 </div>
               </div>
             </div>
@@ -739,7 +757,7 @@ const CaseStudy = () => {
             <h2 className="mb-12 text-5xl font-bold leading-[56px]">
               Final Design
             </h2>
-            <div className='iteration-1'>
+            <div className="iteration-1">
               <div>
                 <h3 className=" mb-6 text-[32px] font-bold leading-[56px] text-neutral-900">
                   Iteration 1: Tuple redefining{' '}
@@ -901,7 +919,11 @@ const CaseStudy = () => {
                   Old Filter and Sort
                 </h4>
                 <p className="mb-6 leading-[30px]">
-                  The current state of the system presents challenges for users in terms of filter navigation and comprehension due to the arrangement and depth of filters. Additionally, users encounter difficulty in understanding and utilizing sorting options, citing issues with both intuitiveness and visibility.
+                  The current state of the system presents challenges for users
+                  in terms of filter navigation and comprehension due to the
+                  arrangement and depth of filters. Additionally, users
+                  encounter difficulty in understanding and utilizing sorting
+                  options, citing issues with both intuitiveness and visibility.
                 </p>
                 <Image
                   src="/casestudy/intlflight/interation-2image1.png"
@@ -911,13 +933,28 @@ const CaseStudy = () => {
                   alt="challenge"
                   className="mb-16"
                 />
-                <h4 className="mb-4 mt-10 font  -['Inter'] text-xl font-bold uppercase leading-loose tracking-wider text-black">
+                <h4 className="font -['Inter'] mb-4  mt-10 text-xl font-bold uppercase leading-loose tracking-wider text-black">
                   Final Design
                 </h4>
                 <p className="mb-6 leading-[30px]">
-                  In the journey towards the final design of filters and sorting options, I began by addressing user comprehension concerns. Recognizing that users typically think in terms of speed and cost, I implemented sort options that allow users to arrange flight sequences based on factors like fastest and cheapest. This intuitive approach aimed to align the system with users&apos; thought processes before delving into the details. <br /> <br />
-
-                  To enhance usability, I strategically positioned primary filters such as stops, airlines, and time of flight upfront. This decision was informed by research indicating that these filters are the most frequently used by users. The user-centric design also focused on making the selected filters highly visible, ensuring that users can easily identify and manage their choices. This approach streamlines the filtering process, providing a more intuitive and user-friendly experience that addresses both comprehension and visibility concerns expressed in earlier evaluations.
+                  In the journey towards the final design of filters and sorting
+                  options, I began by addressing user comprehension concerns.
+                  Recognizing that users typically think in terms of speed and
+                  cost, I implemented sort options that allow users to arrange
+                  flight sequences based on factors like fastest and cheapest.
+                  This intuitive approach aimed to align the system with
+                  users&apos; thought processes before delving into the details.{' '}
+                  <br /> <br />
+                  To enhance usability, I strategically positioned primary
+                  filters such as stops, airlines, and time of flight upfront.
+                  This decision was informed by research indicating that these
+                  filters are the most frequently used by users. The
+                  user-centric design also focused on making the selected
+                  filters highly visible, ensuring that users can easily
+                  identify and manage their choices. This approach streamlines
+                  the filtering process, providing a more intuitive and
+                  user-friendly experience that addresses both comprehension and
+                  visibility concerns expressed in earlier evaluations.
                 </p>
                 <Image
                   src="/casestudy/intlflight/iteration-2img2.png"
@@ -938,7 +975,19 @@ const CaseStudy = () => {
                   Old Expanded Tuple
                 </h4>
                 <p className="mb-6 leading-[30px]">
-                  In the previous expanded tuple design, users faced several usability issues. The excessive scrolling required to access information within the in-page expand section made it inconvenient for users to read details and compare two flight options effectively. The airport code proved to be unhelpful for many users in understanding layovers, and the airport names lacked clarity. Additionally, crucial information such as check-in and cabin baggage details, as well as cancellation and amendment policies, were hidden behind multiple clicks, making it non-intuitive for users to access essential information promptly. Overall, the expanded tuple took up considerable space without providing commensurate utility to users, contributing to a less-than-optimal user experience.
+                  In the previous expanded tuple design, users faced several
+                  usability issues. The excessive scrolling required to access
+                  information within the in-page expand section made it
+                  inconvenient for users to read details and compare two flight
+                  options effectively. The airport code proved to be unhelpful
+                  for many users in understanding layovers, and the airport
+                  names lacked clarity. Additionally, crucial information such
+                  as check-in and cabin baggage details, as well as cancellation
+                  and amendment policies, were hidden behind multiple clicks,
+                  making it non-intuitive for users to access essential
+                  information promptly. Overall, the expanded tuple took up
+                  considerable space without providing commensurate utility to
+                  users, contributing to a less-than-optimal user experience.
                 </p>
                 <Image
                   src="/casestudy/intlflight/iteration-3img1.png"
@@ -952,7 +1001,20 @@ const CaseStudy = () => {
                   Final Design
                 </h4>
                 <p className="mb-6 leading-[30px]">
-                  In this updated version of the expanded tuple, I aimed to enhance the user experience by introducing a side sheet design. This design allows users to focus entirely on the specific flight they are interested in, providing a seamless transition for users to proceed or go back as needed. The improved hierarchy and layout make it easier for users to scan information efficiently. I also incorporated additional details to aid users in making informed choices, including a clearer presentation of layover information, baggage details placed at the end for better organization, and a dedicated fare rules tab. The inclusion of the fare rules tab enables users to review cancellation and date change policies before navigating to the itinerary page, empowering them to make well-informed decisions.
+                  In this updated version of the expanded tuple, I aimed to
+                  enhance the user experience by introducing a side sheet
+                  design. This design allows users to focus entirely on the
+                  specific flight they are interested in, providing a seamless
+                  transition for users to proceed or go back as needed. The
+                  improved hierarchy and layout make it easier for users to scan
+                  information efficiently. I also incorporated additional
+                  details to aid users in making informed choices, including a
+                  clearer presentation of layover information, baggage details
+                  placed at the end for better organization, and a dedicated
+                  fare rules tab. The inclusion of the fare rules tab enables
+                  users to review cancellation and date change policies before
+                  navigating to the itinerary page, empowering them to make
+                  well-informed decisions.
                 </p>
                 <Image
                   src="/casestudy/intlflight/iteration-3img2.png"
@@ -967,11 +1029,13 @@ const CaseStudy = () => {
           </div>
 
           <div className="context | mb-24">
-            <h2 className="mb-8 text-5xl font-bold leading-[56px]">
-              Context
-            </h2>
+            <h2 className="mb-8 text-5xl font-bold leading-[56px]">Context</h2>
             <p className=" mb-6">
-            Cleartrip is a website or app that makes it easy for travellers to plan and book their trips. It&apos;s like a digital travel agent that helps you find and book flights tickets, hotel, and bus rides. It&apos;s a convenient way to organize your travel all in one place.
+              Cleartrip is a website or app that makes it easy for travellers to
+              plan and book their trips. It&apos;s like a digital travel agent
+              that helps you find and book flights tickets, hotel, and bus
+              rides. It&apos;s a convenient way to organize your travel all in
+              one place.
             </p>
           </div>
         </div>
