@@ -27,7 +27,9 @@ const Hero = ({
       <div className="mx-auto flex max-w-largest gap-32 pb-40 pt-[120px]">
         <div className="flex-1">
           <div className="mb-8 flex gap-2">
-            {categories.map((t: string) => <Tags key={t}>{t}</Tags>)}
+            {categories.map((t: string) => (
+              <Tags key={t}>{t}</Tags>
+            ))}
           </div>
           <h1 className="mb-4 text-7xl font-semibold leading-[92px] -tracking-[1.6px]">
             {title}

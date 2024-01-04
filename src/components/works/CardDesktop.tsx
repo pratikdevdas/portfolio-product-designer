@@ -8,12 +8,12 @@ const Card = () => {
       <div className=" relative flex justify-between gap-32 rounded-3xl border border-solid border-black bg-[#FFE9B0] px-24 py-24 pt-28 shadow-workCard duration-500 ease-card-up transform-style-3d translate-z-0 skew-x-0 skew-y-0 scale3d-100 hover:-translate-y-[1.25rem] hover:translate-x-[0.5rem] hover:rotate-2 ">
         <div className="basis-3/6 text-center">
           <h1 className="mb-7 mt-16 text-[64px] font-semibold leading-[80px] ">
-              Luminoss
+            Luminoss
           </h1>
           <p className="mb-16 text-lg font-medium leading-6 opacity-70">
-              Luminos is a Customer Engagement suite and offers the following
-              capabilities: Multi-channel Marketing automation ,Rewards and
-              Loyalty management App / Web based user engagement platform.
+            Luminos is a Customer Engagement suite and offers the following
+            capabilities: Multi-channel Marketing automation ,Rewards and
+            Loyalty management App / Web based user engagement platform.
           </p>
           <button className="inline-flex justify-center gap-2 rounded-xl border-[3px] border-solid border-[#573FEA] p-9 text-2xl font-semibold text-[#573FEA]">
             <span>Read this casestudy</span>{' '}

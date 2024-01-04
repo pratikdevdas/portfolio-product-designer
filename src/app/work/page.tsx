@@ -6,7 +6,6 @@ import Card from '@/components/works/CardMobile'
 import data from './data'
 import Link from 'next/link'
 const Work = () => {
-
   // const pathname = usePathname()
   return (
     <div className="bg-[#F8F7F2]">
@@ -53,17 +52,17 @@ const Work = () => {
           <div className="cursor-pointer rounded-[72px] border-2 border-[#573FEA] bg-[#DFDAFF] px-6	 py-3 text-[#573FEA]">
             All Mentions
           </div>
-          <Link href='?type=web' scroll={false}>
+          <Link href="?type=web" scroll={false}>
             <div className="cursor-pointer  rounded-[72px] border border-[#B5B1B1] bg-white px-6 py-3">
               Web
             </div>
           </Link>
-          <Link href='?type=mobile' scroll={false}>
+          <Link href="?type=mobile" scroll={false}>
             <div className="cursor-pointer  rounded-[72px] border border-[#B5B1B1] bg-white px-6 py-3">
               Mobile
             </div>
           </Link>
-          <Link href='?type=general' scroll={false}>
+          <Link href="?type=general" scroll={false}>
             <div className="cursor-pointer  rounded-[72px] border border-[#B5B1B1] bg-white px-6 py-3">
               General
             </div>
@@ -73,15 +72,28 @@ const Work = () => {
         <div className="mx-auto grid max-w-largest auto-rows-min grid-cols-3 gap-x-5 gap-y-8">
           {data.map((d) => (
             <Link key={d.id} href={`work/notable/${d.id}`}>
-              <div className="rounded-3xl bg-[#573FEA] hover:transition-all">
-                <div className="rounded-3xl border border-solid border-black bg-white p-6 shadow-workCard duration-500 ease-card-up transform-style-3d translate-z-0 skew-x-0 skew-y-0 scale3d-100 hover:-translate-y-[1.25rem] hover:translate-x-[0.5rem] hover:rotate-2">
-                  <Image
-                    src={d.cardImageUrl}
-                    width={450}
-                    height={450}
-                    alt={d.cardImageAlt}
-                    className="shrink-0"
-                  ></Image>
+              <div className="rounded-3xl bg-[#573FEA] hover:transition-all ">
+                <div className=" relative rounded-3xl border border-solid border-black bg-white p-6 shadow-workCard duration-500 ease-card-up transform-style-3d translate-z-0 skew-x-0 skew-y-0 scale3d-100 hover:-translate-y-[1.25rem] hover:translate-x-[0.5rem] hover:rotate-2">
+                  <div className="relative">
+                    <Image
+                      src={d.cardImageUrl}
+                      width={450}
+                      height={450}
+                      alt={d.cardImageAlt}
+                      className="shrink-0"
+                    ></Image>
+                    <div className="absolute left-4 top-4 flex gap-[3px] text-[10px] font-semibold uppercase leading-4 tracking-[0.4px]">
+                      {d.categories.map((c, i) => (
+                        <div
+                          key={i}
+                          className="rounded-[50px] bg-black px-[10px] py-1 text-white"
+                        >
+                          {c === 'Web App' ? 'web' : c}
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
                   <h3 className="pb-2  pt-6 text-2xl font-semibold leading-8">
                     {d.title}
                   </h3>
@@ -110,7 +122,7 @@ const Work = () => {
         </div>
 
         <div className="mx-auto grid max-w-largest auto-rows-min grid-cols-3 gap-x-5 gap-y-8">
-          {data.slice(0,3).map((d) => (
+          {data.slice(0, 3).map((d) => (
             <Link key={d.id} href={`work/notable/${d.id}`}>
               <div className="rounded-3xl bg-[#573FEA] hover:transition-all">
                 <div className="rounded-3xl border border-solid border-black bg-white p-6 shadow-workCard duration-500 ease-card-up transform-style-3d translate-z-0 skew-x-0 skew-y-0 scale3d-100 hover:-translate-y-[1.25rem] hover:translate-x-[0.5rem] hover:rotate-2">

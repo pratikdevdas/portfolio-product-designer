@@ -73,7 +73,7 @@ const data: NotableMention[] = [
   {
     id: 'cleartrip-bus',
     title: 'Cleartrip Bus',
-    cardImageUrl: '/notable/cleartrip-bus/card-image.png',
+    cardImageUrl: '/notable/cleartrip-bus/card-image.svg',
     cardImageAlt: 'firstbox',
     description:
       'Creating a user-friendly and convenient platform for buying bus tickets.',
@@ -123,7 +123,7 @@ const data: NotableMention[] = [
     title: 'Cleartrip support',
     description:
       'Suite to view and access various benefits applicable when booking flights and hotels',
-    cardImageUrl: '/notable/cleartrip-support/card-image.png',
+    cardImageUrl: '/notable/cleartrip-support/card-image.svg',
     cardImageAlt: 'firstbox',
     kind: 'mobile',
     categories: ['Mobile', 'Web App'],
@@ -227,7 +227,7 @@ const data: NotableMention[] = [
       heroImageUrl: '/notable/reportcenter/hero-image.png',
       heroImageAlt: 'cleartrip',
       about:
-        'Report Center is a simple and easy-to-use business intelligence tool that lets users learn and understand their company\'s data. It lets you view, modify and schedule reports with ease. Your reports are categorised into different catalogs that help you navigate and find reports conveniently.',
+        "Report Center is a simple and easy-to-use business intelligence tool that lets users learn and understand their company's data. It lets you view, modify and schedule reports with ease. Your reports are categorised into different catalogs that help you navigate and find reports conveniently.",
       contribution:
         'I was the only designer, reporting to a design manager. - I played a role in optimizing report organization into user-friendly catalogs, facilitating convenient navigation for users.',
       sectionImages: [
@@ -263,8 +263,7 @@ const data: NotableMention[] = [
   {
     id: 'power-center',
     title: 'Power Center',
-    description:
-      'Advanced insights on your products, business, and customers',
+    description: 'Advanced insights on your products, business, and customers',
     cardImageUrl: '/notable/powercenter/card-image.svg',
     cardImageAlt: 'firstbox',
     kind: 'web',
