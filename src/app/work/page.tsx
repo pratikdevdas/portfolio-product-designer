@@ -1,3 +1,6 @@
+'use client'
+
+import { useSearchParams } from 'next/navigation'
 import Navbar from '@/components/navbar'
 import React from 'react'
 import Image from 'next/image'
@@ -5,8 +8,35 @@ import Footer from '@/components/footer'
 import Card from '@/components/works/CardMobile'
 import data from './data'
 import Link from 'next/link'
+
+const talksData = [
+  {
+    id: 'micro',
+    title: 'MicroInteractions',
+    description: 'Run rewards programs and drive customer engagement',
+    cardImageUrl: '/workpage/talks/MicroInteractions.svg',
+    cardImageAlt: 'micro',
+  },
+  {
+    id: 'b2cvb2v',
+    title: 'Designing for B2B vs B2C',
+    description: 'Access real-time business analytics',
+    cardImageUrl: '/workpage/talks/Designing for B2B vs B2C.svg',
+    cardImageAlt: 'b2c',
+  },
+  {
+    id: 'skill101',
+    title: 'Wireframes skill 101',
+    description: 'Generate periodic preconfigured reports',
+    cardImageUrl: '/workpage/talks/Wireframes skill 101.svg',
+    cardImageAlt: 'Wireframes skill 101',
+  },
+]
+
 const Work = () => {
-  // const pathname = usePathname()
+  const searchParams = useSearchParams()
+  const search = searchParams.get('type')
+
   return (
     <div className="bg-[#F8F7F2]">
       <Navbar />
@@ -49,59 +79,86 @@ const Work = () => {
         </div>
 
         <div className="tabs | mb-12 inline-flex w-full justify-center gap-6 text-xl font-semibold text-[#606060] ">
-          <div className="cursor-pointer rounded-[72px] border-2 border-[#573FEA] bg-[#DFDAFF] px-6	 py-3 text-[#573FEA]">
+          <Link
+            className={`${
+              !search
+                ? 'border-2 border-[#573FEA] bg-[#DFDAFF] text-[#573FEA]'
+                : 'border border-[#B5B1B1] bg-white'
+            } cursor-pointer rounded-[72px]  px-6 py-3 `}
+            href="?"
+            scroll={false}
+          >
             All Mentions
-          </div>
-          <Link href="?type=web" scroll={false}>
-            <div className="cursor-pointer  rounded-[72px] border border-[#B5B1B1] bg-white px-6 py-3">
-              Web
-            </div>
           </Link>
-          <Link href="?type=mobile" scroll={false}>
-            <div className="cursor-pointer  rounded-[72px] border border-[#B5B1B1] bg-white px-6 py-3">
-              Mobile
-            </div>
+          <Link
+            href="?type=web"
+            className={`${
+              search === 'web'
+                ? 'border-2 border-[#573FEA] bg-[#DFDAFF] text-[#573FEA]'
+                : 'border border-[#B5B1B1] bg-white'
+            } cursor-pointer rounded-[72px]  px-6 py-3 `}
+            scroll={false}
+          >
+            Web
           </Link>
-          <Link href="?type=general" scroll={false}>
-            <div className="cursor-pointer  rounded-[72px] border border-[#B5B1B1] bg-white px-6 py-3">
-              General
-            </div>
+          <Link
+            href="?type=mobile"
+            className={`${
+              search === 'moblie'
+                ? 'border-2 border-[#573FEA] bg-[#DFDAFF] text-[#573FEA]'
+                : 'border border-[#B5B1B1] bg-white'
+            } cursor-pointer rounded-[72px]  px-6 py-3 `}
+            scroll={false}
+          >
+            Mobile
+          </Link>
+          <Link
+            href="?type=general"
+            className={`${
+              search === 'general'
+                ? 'border-2 border-[#573FEA] bg-[#DFDAFF] text-[#573FEA]'
+                : 'border border-[#B5B1B1] bg-white'
+            } cursor-pointer rounded-[72px]  px-6 py-3 `}
+            scroll={false}
+          >
+            General
           </Link>
         </div>
-
         <div className="mx-auto grid max-w-largest auto-rows-min grid-cols-3 gap-x-5 gap-y-8">
-          {data.map((d) => (
-            <Link key={d.id} href={`work/notable/${d.id}`}>
-              <div className="rounded-3xl bg-[#573FEA] hover:transition-all ">
-                <div className=" relative rounded-3xl border border-solid border-black bg-white p-6 shadow-workCard duration-500 ease-card-up transform-style-3d translate-z-0 skew-x-0 skew-y-0 scale3d-100 hover:-translate-y-[1.25rem] hover:translate-x-[0.5rem] hover:rotate-2">
-                  <div className="relative">
-                    <Image
-                      src={d.cardImageUrl}
-                      width={450}
-                      height={450}
-                      alt={d.cardImageAlt}
-                      className="shrink-0"
-                    ></Image>
-                    <div className="absolute left-4 top-4 flex gap-[3px] text-[10px] font-semibold uppercase leading-4 tracking-[0.4px]">
-                      {d.categories.map((c, i) => (
-                        <div
-                          key={i}
-                          className="rounded-[50px] bg-black px-[10px] py-1 text-white"
-                        >
-                          {c === 'Web App' ? 'web' : c}
-                        </div>
-                      ))}
+          {data
+            .filter((d) => (search ? d.kind === search : d))
+            .map((d) => (
+              <Link key={d.id} href={`work/notable/${d.id}`}>
+                <div className="rounded-3xl bg-[#573FEA] hover:transition-all ">
+                  <div className=" relative rounded-3xl border border-solid border-black bg-white p-6 shadow-workCard duration-500 ease-card-up transform-style-3d translate-z-0 skew-x-0 skew-y-0 scale3d-100 hover:-translate-y-[1.25rem] hover:translate-x-[0.5rem] hover:rotate-2">
+                    <div className="relative">
+                      <Image
+                        src={d.cardImageUrl}
+                        width={450}
+                        height={450}
+                        alt={d.cardImageAlt}
+                        className="shrink-0"
+                      ></Image>
+                      <div className="absolute left-4 top-4 flex gap-[3px] text-[10px] font-semibold uppercase leading-4 tracking-[0.4px]">
+                        {d.categories.map((c, i) => (
+                          <div
+                            key={i}
+                            className="rounded-[50px] bg-black px-[10px] py-1 text-white"
+                          >
+                            {c === 'Web App' ? 'web' : c}
+                          </div>
+                        ))}
+                      </div>
                     </div>
-                  </div>
 
-                  <h3 className="pb-2  pt-6 text-2xl font-semibold leading-8">
-                    {d.title}
-                  </h3>
-                  <p className="text-base leading-6">{d.description}</p>
+                    <h3 className="pb-2  pt-6 text-2xl font-semibold leading-8">
+                      {d.title}
+                    </h3>
+                    <p className="text-base leading-6">{d.description}</p>
+                  </div>
                 </div>
-              </div>
-            </Link>
-          ))}
+              </Link>
+            ))}
         </div>
 
         <div className="mb-[60px] mt-[120px] flex gap-72 ">
@@ -121,25 +178,28 @@ const Work = () => {
           </p>
         </div>
 
-        <div className="mx-auto grid max-w-largest auto-rows-min grid-cols-3 gap-x-5 gap-y-8">
-          {data.slice(0, 3).map((d) => (
-            <Link key={d.id} href={`work/notable/${d.id}`}>
-              <div className="rounded-3xl bg-[#573FEA] hover:transition-all">
-                <div className="rounded-3xl border border-solid border-black bg-white p-6 shadow-workCard duration-500 ease-card-up transform-style-3d translate-z-0 skew-x-0 skew-y-0 scale3d-100 hover:-translate-y-[1.25rem] hover:translate-x-[0.5rem] hover:rotate-2">
-                  <Image
-                    src={d.cardImageUrl}
-                    width={450}
-                    height={450}
-                    alt={d.cardImageAlt}
-                    className="shrink-0"
-                  ></Image>
-                  <h3 className="pb-2  pt-6 text-2xl font-semibold leading-8">
-                    {d.title}
-                  </h3>
-                  <p className="text-base leading-6">{d.description}</p>
-                </div>
-              </div>
-            </Link>
+        <div className="row-span-1 mx-auto grid max-w-largest grid-cols-3 items-stretch  gap-x-5 gap-y-8">
+          {talksData.map((d) => (
+            // <div key={d.id} className="rounded-3xl bg-[#573FEA] hover:transition-all">
+            // <Link  className='h-full' href={`work/notable/${d.id}`}>
+            <div
+              key={d.id}
+              className="h-full rounded-3xl border border-solid border-black bg-white p-6 shadow-workCard"
+            >
+              <Image
+                src={d.cardImageUrl}
+                width={450}
+                height={450}
+                alt={d.cardImageAlt}
+                className="shrink-0"
+              ></Image>
+              <h3 className="pb-2  pt-6 text-2xl font-semibold leading-8">
+                {d.title}
+              </h3>
+              <p className="text-base leading-6">{d.description}</p>
+            </div>
+            //</Link>
+            // </div>
           ))}
         </div>
 

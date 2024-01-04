@@ -312,7 +312,7 @@ const data: NotableMention[] = [
       aboutImageUrl: '/notable/1centbetter/about.svg',
       aboutImageAlt: 'About Image',
       description:
-        'CT FlexMax offers free cancel or reschedule on all domestic flight bookings',
+        'Organised team learning fosters mutual improvement, making the team 1% better.',
       heroImageUrl: '/notable/1centbetter/hero.svg',
       heroImageAlt: 'cleartrip',
       about:

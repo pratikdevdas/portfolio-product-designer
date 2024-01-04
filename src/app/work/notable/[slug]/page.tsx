@@ -165,7 +165,7 @@ const Part = ({ dataToDisplay }: { dataToDisplay: NotableMention }) => {
           imageAlt={sectionThree.imageAlt}
         />
         {multiMobileImgUrl && multiMobileImgAlt && (
-          <div className='py-10 pb-[160px]'>
+          <div className="py-10 pb-[160px]">
             <MultiMobileContainer
               id={dataToDisplay.id}
               imageUrl={multiMobileImgUrl}
