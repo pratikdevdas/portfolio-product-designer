@@ -4,7 +4,7 @@ interface NotableMentionBase {
   description: string
   cardImageUrl: string
   cardImageAlt: string
-  categories: ('Mobile' | 'Web App' | 'general')[]
+  categories: ('Mobile' | 'Web App' | 'General: Team Building')[]
 }
 export interface NotableMentionPageElements {
   description: string
@@ -58,10 +58,7 @@ export interface sectionImagesWeb {
 
 interface NotableMentionGeneral extends NotableMentionBase {
   kind: 'general'
-  pageElements: Omit<
-    NotableMentionPageElements,
-    'aboutImageUrl' | 'aboutImageAlt'
-  >
+  pageElements: Omit<NotableMentionPageElements, 'contribution'>
 }
 
 export type NotableMention =
@@ -300,6 +297,52 @@ const data: NotableMention[] = [
           imageAlt: 'powercenter',
         },
       ],
+    },
+  },
+  {
+    id: '1centbetter',
+    title: '1% Better',
+    description:
+      'Organised team learning fosters mutual improvement, making the team 1% better.',
+    cardImageUrl: '/notable/1centbetter/card-image.svg',
+    cardImageAlt: 'better',
+    kind: 'general',
+    categories: ['General: Team Building'],
+    pageElements: {
+      aboutImageUrl: '/notable/1centbetter/about.svg',
+      aboutImageAlt: 'About Image',
+      description:
+        'CT FlexMax offers free cancel or reschedule on all domestic flight bookings',
+      heroImageUrl: '/notable/1centbetter/hero.svg',
+      heroImageAlt: 'cleartrip',
+      about:
+        'I introduced an initiative called "1% Better" for my design team to foster collaboration and skill-sharing. Recognizing that each team member possesses unique, often overlooked skills, our busy schedules hindered the opportunity to learn from one another. -- The goal of "1% Better" is to facilitate mutual learning and skill enhancement within the team. The concept follows the idea that by making small daily improvements, even though initially seeming insignificant, these efforts accumulate over time. Ultimately, this initiative aims to transform us into a more cohesive and skilled community, with continuous growth and development.',
+      sectionOne: {
+        heading: 'Brag your',
+        headerSpan: 'skills',
+        description:
+          'Selecting a topic deemed informative and captivating for the designers, the choice is open to anything that aligns with their interests—be it discussions on art, design, analytics, or products. The goal is to provide valuable insights that contribute to their professional growth and inspire fascination in their chosen field.',
+        imageAlt: '',
+        imageUrl: '/notable/1centbetter/section-1.svg',
+      },
+      sectionTwo: {
+        heading: 'Design',
+        headerSpan: 'workout',
+        description:
+          'In the realm of sports, teams routinely engage in pre-game training, repeating various drills, honing core skills, and refining teamwork strategies. In a parallel fashion, designers undergo similar exercises where they brainstorm ideas, enhance their core skills, and cultivate collaborative dynamics to work more effectively as a team.',
+        imageUrl: '/notable/1centbetter/section-2.svg',
+        imageAlt: '',
+      },
+      sectionThree: {
+        heading: 'Expertise',
+        headerSpan: 'from expert',
+        description:
+          'The monthly event "Expertise from Expert" will showcase presenters from diverse fields beyond user experience, providing an opportunity to gain insights from different perspectives. Through this approach, valuable perspectives and insights are expected to be gathered during these sessions.',
+        imageAlt: '',
+        imageUrl: '/notable/1centbetter/section-3.svg',
+      },
+      multiMobileImgUrl: '/notable/1centbetter/bottom-multi.svg',
+      multiMobileImgAlt: 'bottom-multi',
     },
   },
 ]

@@ -8,6 +8,7 @@ import SimilarCards from './components/SimilarCards'
 import data, { NotableMention } from '../../data'
 import SectionBelowHeroWeb from './components/Web/SectionBelowHero'
 import SectionImageShow from './components/Web/SectionImageShow'
+import SectionGeneralBelowHero from './components/general/SectionGeneralBelowHero'
 
 const page = ({ params }: { params: { slug: string } }) => {
   console.log(params.slug)
@@ -36,10 +37,10 @@ const page = ({ params }: { params: { slug: string } }) => {
 export default page
 
 const Part = ({ dataToDisplay }: { dataToDisplay: NotableMention }) => {
-  const { about, contribution } = dataToDisplay.pageElements
+  const { about } = dataToDisplay.pageElements
 
   switch (dataToDisplay.kind) {
-  case 'mobile':
+  case 'mobile': {
     // eslint-disable-next-line no-case-declarations
     let {
       aboutImageUrl,
@@ -49,6 +50,7 @@ const Part = ({ dataToDisplay }: { dataToDisplay: NotableMention }) => {
       sectionThree,
       multiMobileImgAlt,
       multiMobileImgUrl,
+      contribution,
     } = dataToDisplay.pageElements
     return (
       <div>
@@ -60,7 +62,7 @@ const Part = ({ dataToDisplay }: { dataToDisplay: NotableMention }) => {
           title={dataToDisplay.title}
         />
         <div
-          className={dataToDisplay.id === 'ct-support' ? 'pt-[110  px]' : ''}
+          className={dataToDisplay.id === 'ct-support' ? 'pt-[110px]' : ''}
         >
           <SectionImageLeft
             id={dataToDisplay.id}
@@ -101,9 +103,10 @@ const Part = ({ dataToDisplay }: { dataToDisplay: NotableMention }) => {
         )}
       </div>
     )
-  case 'web':
+  }
+  case 'web': {
     // eslint-disable-next-line no-case-declarations
-    let { sectionImages } = dataToDisplay.pageElements
+    let { sectionImages, contribution } = dataToDisplay.pageElements
     return (
       <div>
         <SectionBelowHeroWeb
@@ -114,19 +117,65 @@ const Part = ({ dataToDisplay }: { dataToDisplay: NotableMention }) => {
         <SectionImageShow sectionImages={sectionImages} />
       </div>
     )
-  case 'general':
+  }
+  case 'general': {
     // eslint-disable-next-line no-case-declarations
     // let { sectionImages } = dataToDisplay.pageElements
+    let {
+      aboutImageUrl,
+      aboutImageAlt,
+      sectionOne,
+      sectionTwo,
+      sectionThree,
+      multiMobileImgAlt,
+      multiMobileImgUrl,
+    } = dataToDisplay.pageElements
     return (
       <div>
-        <SectionBelowHeroWeb
+        <SectionGeneralBelowHero
           about={about}
-          contribution={contribution}
           title={dataToDisplay.title}
+          aboutImageUrl={aboutImageUrl}
+          aboutImageAlt={aboutImageAlt}
         />
-        {/* <SectionImageShow sectionImages={sectionImages} /> */}
+        <SectionImageLeft
+          id={dataToDisplay.id}
+          heading={sectionOne.heading}
+          headingSpan={sectionOne.headerSpan}
+          description={sectionOne.description}
+          imageUrl={sectionOne.imageUrl}
+          imageAlt={sectionOne.imageAlt}
+        />
+        <div className="py-[160px]">
+          <SectionImageRight
+            id={dataToDisplay.id}
+            heading={sectionTwo.heading}
+            headingSpan={sectionTwo.headerSpan}
+            description={sectionTwo.description}
+            imageUrl={sectionTwo.imageUrl}
+            imageAlt={sectionTwo.imageAlt}
+          />
+        </div>
+        <SectionImageLeft
+          id={dataToDisplay.id}
+          heading={sectionThree.heading}
+          headingSpan={sectionThree.headerSpan}
+          description={sectionThree.description}
+          imageUrl={sectionThree.imageUrl}
+          imageAlt={sectionThree.imageAlt}
+        />
+        {multiMobileImgUrl && multiMobileImgAlt && (
+          <div className='py-10 pb-[160px]'>
+            <MultiMobileContainer
+              id={dataToDisplay.id}
+              imageUrl={multiMobileImgUrl}
+              imageAlt={multiMobileImgAlt}
+            />
+          </div>
+        )}
       </div>
     )
+  }
 
   default:
   }
