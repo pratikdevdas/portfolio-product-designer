@@ -5,6 +5,7 @@ import Link from 'next/link'
 
 import discussImage from '../../../../public/casestudy/intlflight/new-tuple-discuss.png'
 import tupleAllImage from '../../../../public/casestudy/intlflight/tuples-all.png'
+import Footer from '@/components/footer'
 
 const CaseStudy = () => {
   return (
@@ -419,7 +420,7 @@ const CaseStudy = () => {
             </div>
           </div>
 
-          <div className="research | mb-24">
+          <div className="research | mb-24" id='research'>
             <h2 className="mb-8 text-5xl font-bold leading-[56px]">Research</h2>
             <p className=" mb-6">
               To improve International booking conversion by 200- 300 bps
@@ -531,7 +532,7 @@ const CaseStudy = () => {
             </div>
           </div>
 
-          <div className="challenge | mb-24">
+          <div className="challenge | mb-24" id='challenge'>
             <h2 className="mb-12 text-5xl font-bold leading-[56px]">
               Challenge
             </h2>
@@ -753,7 +754,7 @@ const CaseStudy = () => {
             </div>
           </div>
 
-          <div className="finaldesign | mb-24">
+          <div className="finaldesign | mb-24" id='finaldesign'>
             <h2 className="mb-12 text-5xl font-bold leading-[56px]">
               Final Design
             </h2>
@@ -1028,8 +1029,8 @@ const CaseStudy = () => {
             </div>
           </div>
 
-          <div className="context | mb-24">
-            <h2 className="mb-8 text-5xl font-bold leading-[56px]">Context</h2>
+          <div className="outcome | mb-24" id="outcome">
+            <h2 className="mb-8 text-5xl font-bold leading-[56px]">Outcome</h2>
             <p className=" mb-6">
               Cleartrip is a website or app that makes it easy for travellers to
               plan and book their trips. It&apos;s like a digital travel agent
@@ -1038,8 +1039,24 @@ const CaseStudy = () => {
               one place.
             </p>
           </div>
+
+
+          <div className="closing | mb-24" id='closingnot'>
+            <h2 className="mb-8 text-5xl font-bold leading-[56px]">Closing Notes</h2>
+            <p className=" mb-6">
+            Initially, our team wasn&apos;t entirely sure about making changes, thinking we were doing well in the international market. However, when we closely looked at how many people were actually completing their bookings, we were in for a surprise. The numbers showed a whopping 200% increase in the total value of international flight bookings! <br />
+This eye-opening data convinced us that there&apos;s a real opportunity to grow in the international market. So, we&apos;ve decided to invest more in the next quarter, especially in making international flight experiences even better for you. We&apos;re excited to bring you more options and improvements based on this great news! Your positive experiences and feedback keep us motivated to keep enhancing our services.
+            </p>
+          </div>
         </div>
       </div>
+
+      <div className='py-[120px] mb-[488px] mt mx-auto flex max-w-largest'>
+        <h3 className='text-5xl font-semibold tracking-[-1.6px] leading-[92px]'>
+        Similar casestudy
+        </h3>
+      </div>
+      <Footer></Footer>
     </section>
   )
 }
