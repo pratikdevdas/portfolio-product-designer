@@ -12,34 +12,37 @@ const Navbar = () => {
             Contact
           </Link>
         </div>
-      </div>{' '}
-      <div className="mx-auto flex max-w-largest items-center justify-between py-6">
-        <Link href="/">
-          <Image src="/Shushant.svg" alt="logo" width={120} height={120} />
-        </Link>
-        <nav className="primary-navigation" id="primary-navigation">
-          <ul
-            aria-label="Primary"
-            role="list"
-            className="flex gap-11 font-medium"
-          >
-            <li>
-              <Link href="/work">Work</Link>
-            </li>
-            <li>
-              <Link href="#">workshop</Link>
-            </li>
-            <li>
-              <Link href="/about">About Me</Link>
-            </li>
-            <li>
-              <Link href="#">Contact</Link>
-            </li>
-          </ul>
-        </nav>
-        <button className="inline-flex justify-center rounded-xl bg-[#573FEA] px-5 py-4 text-white">
+      </div>
+      <div className='sticky overflow-y-hidden top-0 '>
+
+        <div className="mx-auto   flex max-w-largest items-center justify-between py-6">
+          <Link href="/">
+            <Image src="/Shushant.svg" alt="logo" width={120} height={120} />
+          </Link>
+          <nav className="primary-navigation" id="primary-navigation">
+            <ul
+              aria-label="Primary"
+              role="list"
+              className="flex gap-11 font-medium"
+            >
+              <li>
+                <Link href="/work">Work</Link>
+              </li>
+              <li>
+                <Link href="#">workshop</Link>
+              </li>
+              <li>
+                <Link href="/about">About Me</Link>
+              </li>
+              <li>
+                <Link href="#">Contact</Link>
+              </li>
+            </ul>
+          </nav>
+          <button className="inline-flex justify-center rounded-xl bg-[#573FEA] px-5 py-4 text-white">
           Check Resume
-        </button>
+          </button>
+        </div>
       </div>
     </div>
   )
