@@ -10,7 +10,7 @@ const Navbar = () => {
   const path = usePathname()
 
   return (
-    <div>
+    <div className='sticky bg-inherit w-full top-0 z-50'>
       <div className="bg-[#DED9FF]">
         <div className="mx-auto max-w-largest py-4 text-center  font-semibold text-[#573FEA]">
           <span>💼</span> Open to work as Full-time and Freelancer .{' '}
@@ -19,8 +19,7 @@ const Navbar = () => {
           </Link>
         </div>
       </div>
-      <div className='sticky overflow-y-hidden top-0 '>
-
+      <div>
         <div className="mx-auto   flex max-w-largest items-center justify-between py-6">
           <Link href="/">
             <Image src="/Shushant.svg" alt="logo" width={120} height={120} />

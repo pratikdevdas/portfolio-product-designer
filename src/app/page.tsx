@@ -6,10 +6,8 @@ import NotableCta from '@/components/notablecta'
 
 export default function Home() {
   return (
-    <>
-      <header>
-        <Navbar />
-      </header>
+    <div className='bg-white'>
+      <Navbar />
       <section className="mx-auto max-w-5xl pb-40 pt-32 text-center">
         <h1 className="mb-16 text-6xl font-medium leading-[72px] tracking-[-1.6px]">
           Hi there, I’m <br />
@@ -26,6 +24,6 @@ export default function Home() {
       <NotableCta />
       <Talks />
       <Footer />
-    </>
+    </div>
   )
 }
