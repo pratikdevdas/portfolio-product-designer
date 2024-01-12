@@ -2,6 +2,7 @@ import Works from '@/components/works'
 import Talks from '@/components/talks'
 import Footer from '@/components/footer'
 import Navbar from '@/components/navbar'
+import NotableCta from '@/components/notablecta'
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
         </p>
       </section>
       <Works />
+      <NotableCta />
       <Talks />
       <Footer />
     </>

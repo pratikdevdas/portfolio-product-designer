@@ -1094,13 +1094,27 @@ const CaseStudy = () => {
 
           <div className="outcome | mb-24" id="outcome">
             <h2 className="mb-8 text-5xl font-bold leading-[56px]">Outcome</h2>
-            <p className=" mb-6">
-              Cleartrip is a website or app that makes it easy for travellers to
-              plan and book their trips. It&apos;s like a digital travel agent
-              that helps you find and book flights tickets, hotel, and bus
-              rides. It&apos;s a convenient way to organize your travel all in
-              one place.
+            <h3 className=" mb-4 text-[32px] font-bold leading-[56px] text-neutral-900">
+            Launched the new version by the end of jun&apos;23
+            </h3>
+            <p className="mb-9 text-xl font-normal leading-[30px] text-black">
+            We successfully rolled out the latest version with the redesigned tuples and enhanced user-friendly features. With the design largely settled, I collaborated closely with our dedicated engineering team throughout the implementation phase. Weekly sync-ups with both the engineers and product manager allowed for continuous status updates and addressing any challenges. Despite encountering a few hiccups, I made minor iterations and devised workarounds to ensure a seamless process. The new version, featuring all the anticipated features, was successfully launched by the end of June 2023
             </p>
+            <Image
+              src="/casestudy/intlflight/outcomegrp.svg"
+              width={912}
+              height={265}
+              alt=''
+              className='mb-10'
+            />
+
+            <Image
+              src="/casestudy/intlflight/outcomemain.png"
+              width={912}
+              height={265}
+              alt=''
+            />
+
           </div>
 
 

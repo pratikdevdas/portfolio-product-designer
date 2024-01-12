@@ -5,9 +5,14 @@ import Navbar from '@/components/navbar'
 import React from 'react'
 import Image from 'next/image'
 import Footer from '@/components/footer'
-import Card from '@/components/works/CardMobile'
+import  CardMobile from '@/components/works/CardMobile'
+import  CardMobile2 from '@/components/works/CardMobile2'
+import  CardMobile3 from '@/components/works/CardMobile3'
 import data from './data'
 import Link from 'next/link'
+import CardDesktop2 from '@/components/works/CardDesktop2'
+import CardDesktop from '@/components/works/CardDesktop'
+import CardMobile4 from '@/components/works/CardMobile4'
 
 const talksData = [
   {
@@ -32,6 +37,7 @@ const talksData = [
     cardImageAlt: 'Wireframes skill 101',
   },
 ]
+
 
 const Work = () => {
   const searchParams = useSearchParams()
@@ -59,10 +65,15 @@ const Work = () => {
       </section>
 
       <section className="cardcontainer | mx-auto mb-[120px] flex max-w-largest  flex-col gap-10">
-        <Card />
+        < CardMobile />
+        <CardDesktop2 />
+        < CardMobile2 />
+        < CardMobile3 />
+        <CardDesktop />
+        < CardMobile4 />
       </section>
 
-      <section className="mx-auto max-w-largest bg-[#F8F7F2] pb-[304px] pt-[120px] ">
+      <section className="mx-auto max-w-largest bg-[#F8F7F2] pb-[304px] pt-[120px]" id='notable'>
         <div className="mb-20 flex gap-40">
           <h1 className="shrink-0 pr-12 text-[72px] font-semibold leading-[92px] tracking-[-1.6px] text-[#573FEA]">
             Notable <br />
