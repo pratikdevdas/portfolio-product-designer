@@ -9,11 +9,11 @@ import Footer from '@/components/footer'
 
 const CaseStudy = () => {
   return (
-    <section>
+    <section className='bg-white'>
       <Navbar />
 
       <div className="mx-auto mt-[102px] flex max-w-largest items-start gap-6 text-xl leading-[30px]">
-        <div className="sticky top-6 w-[288px] shrink-0">
+        <div className="sticky top-28 w-[288px] shrink-0">
           <h2 className="mb-8 font-semibold">In This Casestudy</h2>
           <div className="inline-flex flex-col items-start justify-start gap-3.5">
             <Link href="#introductions">Introduction</Link>
