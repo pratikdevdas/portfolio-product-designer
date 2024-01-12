@@ -1,8 +1,14 @@
+'use client'
+
 import Link from 'next/link'
 import Image from 'next/image'
 import React from 'react'
+import { usePathname } from 'next/navigation'
 
 const Navbar = () => {
+
+  const path = usePathname()
+
   return (
     <div>
       <div className="bg-[#DED9FF]">
@@ -25,13 +31,13 @@ const Navbar = () => {
               role="list"
               className="flex gap-11 font-medium"
             >
-              <li>
+              <li className={`${path === '/work' && 'text-[#573FEA]'}`}>
                 <Link href="/work">Work</Link>
               </li>
               <li>
                 <Link href="#">workshop</Link>
               </li>
-              <li>
+              <li className={`${path === '/about' && 'text-[#573FEA]'}`}>
                 <Link href="/about">About Me</Link>
               </li>
               <li>
