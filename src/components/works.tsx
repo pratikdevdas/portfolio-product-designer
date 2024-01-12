@@ -13,13 +13,12 @@ const works = () => {
       </h1>
       <div className="cardcontainer | flex flex-col gap-10 ">
         {/* card start */}
-        < CardMobile />
+        <CardMobile />
         <CardDesktop2 />
-        < CardMobile2 />
-        < CardMobile3 />
+        <CardMobile2 />
+        <CardMobile3 />
         <CardDesktop />
-        < CardMobile4 />
-
+        <CardMobile4 />
       </div>
     </section>
   )

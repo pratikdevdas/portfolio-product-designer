@@ -6,11 +6,10 @@ import React from 'react'
 import { usePathname } from 'next/navigation'
 
 const Navbar = () => {
-
   const path = usePathname()
 
   return (
-    <div className='sticky bg-inherit w-full top-0 z-50'>
+    <div className="sticky top-0 z-50 w-full bg-inherit">
       <div className="bg-[#DED9FF]">
         <div className="mx-auto max-w-largest py-4 text-center  font-semibold text-[#573FEA]">
           <span>💼</span> Open to work as Full-time and Freelancer .{' '}
@@ -45,7 +44,7 @@ const Navbar = () => {
             </ul>
           </nav>
           <button className="inline-flex justify-center rounded-xl bg-[#573FEA] px-5 py-4 text-white">
-          Check Resume
+            Check Resume
           </button>
         </div>
       </div>

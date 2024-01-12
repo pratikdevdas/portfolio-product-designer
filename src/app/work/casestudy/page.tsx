@@ -9,7 +9,7 @@ import Footer from '@/components/footer'
 
 const CaseStudy = () => {
   return (
-    <section className='bg-white'>
+    <section className="bg-white">
       <Navbar />
 
       <div className="mx-auto mt-[102px] flex max-w-largest items-start gap-6 text-xl leading-[30px]">
@@ -27,7 +27,7 @@ const CaseStudy = () => {
             <Link href="#closingnot">Closing Notes</Link>
           </div>
         </div>
-        <div>
+        <div className="scroll-pt-36">
           <div className="mb-8 flex justify-between text-xl font-medium">
             <Link href="/work">
               <div className="flex items-center gap-3">
@@ -56,7 +56,7 @@ const CaseStudy = () => {
             <div>4 minutes read</div>
           </div>
 
-          <div className="header | mb-24">
+          <div className="header | mb-24 scroll-pt-24">
             <h1 className="mb-4 text-[64px] font-semibold leading-[72px]">
               Redesigning, International Flights booking experience{' '}
             </h1>
@@ -142,7 +142,7 @@ const CaseStudy = () => {
             </div>
           </div>
 
-          <div id="context" className="context | mb-24">
+          <div id="context" className="context | mb-24 scroll-mt-44">
             <h2 className="mb-8 text-5xl font-bold leading-[56px]">Context</h2>
             <p className=" mb-6">
               Cleartrip is a website or app that makes it easy for travellers to
@@ -172,7 +172,7 @@ const CaseStudy = () => {
             </p>
           </div>
 
-          <div className="problem | mb-24" id="problem">
+          <div className="problem | mb-24 scroll-mt-44 " id="problem">
             <h2 className="mb-8 text-5xl font-bold leading-[56px]">Problem</h2>
             <p className=" mb-6">
               The current design for international flight book ing poses several
@@ -343,7 +343,10 @@ const CaseStudy = () => {
             </div>
           </div>
 
-          <div className="finalsolution | mb-24" id="finalsolution">
+          <div
+            className="finalsolution | mb-24 scroll-mt-44"
+            id="finalsolution"
+          >
             <h2 className="mb-8 text-5xl font-bold leading-[56px]">
               Final Solution
             </h2>
@@ -420,62 +423,251 @@ const CaseStudy = () => {
             </div>
           </div>
 
-          <div className="research | mb-24" id='research'>
+          <div className="research | mb-24 scroll-mt-44" id="research">
             <h2 className="mb-8 text-5xl font-bold leading-[56px]">Research</h2>
             {/* fixlater */}
-            <div className="flex-col justify-start items-start gap-8 inline-flex">
-              <div className="flex-col justify-start items-start gap-2 flex">
-                <div className=" text-neutral-900 text-[32px] font-bold  leading-[56px]">Frontstage: What We Can See</div>
-                <div className=" text-black text-xl font-normal  leading-[30px]">When we observe people booking flights, we notice unpleasant side effects and interesting user hacks.</div>
+            <div className="inline-flex flex-col items-start justify-start gap-8">
+              <div className="flex flex-col items-start justify-start gap-2">
+                <div className=" text-[32px] font-bold leading-[56px]  text-neutral-900">
+                  Frontstage: What We Can See
+                </div>
+                <div className=" text-xl font-normal leading-[30px]  text-black">
+                  When we observe people booking flights, we notice unpleasant
+                  side effects and interesting user hacks.
+                </div>
               </div>
-              <div className="flex-col justify-start items-start gap-6 flex">
+              <div className="flex flex-col items-start justify-start gap-6">
                 <div>
-                  <span className="text-black text-xl font-bold  leading-[30px]">Searching for the right flight is extremely stressful.<br /></span><span className="text-black text-xl font-normal  leading-[30px]">High prices, limited availability, artificial scarcity, a plenitude of options, as well as an ingrained penchant for cost traps and loopholes.</span></div>
-                <div><span className="text-black text-xl font-bold  leading-[30px]">The flight gets more expensive with every search.<br /></span><span className="text-black text-xl font-normal  leading-[30px]">Opaque pricing and the feeling of being on the airline’s hook make travelers suspicious of cookies and tracking.</span></div>
-                <div><span className="text-black text-xl font-bold  leading-[30px]">Flights are like looking for a needle in a haystack.<br /></span><span className="text-black text-xl font-normal  leading-[30px]">Alone, the route from Frankfurt to Honolulu offers 8,777 different flight combinations. To get a handle on what’s on offer, travelers turn to third-party providers like skyscanners to combine different routes or Google to find offers from the surrounding area and many more.</span></div>
-                <div><span className="text-black text-xl font-bold  leading-[30px]">Long waiting times are nerve-wracking.<br /></span><span className="text-black text-xl font-normal  leading-[30px]">Prices are recalculated, and availability is checked for every search query. In our test, a query usually takes 10 seconds. This always leads to long waiting times in the observed search behavior.</span></div>
-                <div><span className="text-black text-xl font-bold  leading-[30px]">The quest for the best flight deal.<br /></span><span className="text-black text-xl font-normal  leading-[30px]">The most important decision criterion for a flight is still the price. But every search parameter influences it. The lack of price communication reinforces the feeling of intransparency.</span></div>
-                <div><span className="text-black text-xl font-bold  leading-[30px]">The feeling of having paid too much for the flight.<br /></span><span className="text-black text-xl font-normal  leading-[30px]">When it comes to flights, most travelers are confronted with “from” prices. However, these are only available on certain flights and in limited numbers. What if such flights are not available? This leads to negative anchoring: what seemed affordable at the beginning now seems all the more expensive.</span></div>
-              </div>
-            </div>
-            <div className=" flex-col justify-start items-start gap-8 inline-flex mt-12">
-              <div className="flex-col justify-start items-start gap-2 flex">
-                <div className=" text-neutral-900 text-[32px] font-bold  leading-[56px]">Backstage: What We Don’t See</div>
-                <div className=" text-black text-xl font-normal  leading-[30px]">It takes a look behind the curtain to find out that there are numerous technical and business constraints that have an enormous impact on flight search. Rather than years of usability engineering, the search experience is largely determined by third-party booking systems, dynamic pricing, and cost-per-request mechanics.</div>
-              </div>
-              <div className="flex-col justify-start items-start gap-6 flex">
-                <div><span className="text-black text-xl font-bold  leading-[30px]">3rd Party Booking System.<br /></span><span className="text-black text-xl font-normal  leading-[30px]">Behind most flight searches is a reservation system running called Amadeus. This is where millions of customers purchase their tickets. Amadeus is mostly responsible for which data points are available and how the interface is designed. Airlines use those systems and can only exert limited influence on a better solution.</span></div>
-                <div><span className="text-black text-xl font-bold  leading-[30px]">Dynamic Pricing.<br /></span><span className="text-black text-xl font-normal  leading-[30px]">Dynamic pricing is used to set the price of a product based on current market conditions. Prices fluctuate in real-time based on current data. This includes data on customer booking behavior, competitor airline prices, popular events, and a variety of other factors that affect product demand and necessitate price adjustments.</span></div>
-                <div><span className="text-black text-xl font-bold  leading-[30px]">Cost per request.<br /></span><span className="text-black text-xl font-normal  leading-[30px]">In most cases, searches are charged per request. To keep costs down, airlines want to reduce search requests. This leads to avoiding both pre-emptive and iterative queries.</span></div>
-              </div>
-            </div>
-            <div className=" px-6 py-10 bg-indigo-600 rounded-3xl flex-col  my-12 justify-start items-start gap-2 inline-flex">
-              <div className="flex-col justify-start items-start gap-9 flex">
-                <div className="flex-col justify-center items-start gap-4 flex">
-                  <div className="opacity-70 text-white text-base font-semibold  leading-normal">Reframing The Problem</div>
-                  <div className="text-white text-2xl font-semibold  leading-[32px]">Flight searches are structured in such a way that it is highly unlikely that a customer can find a suitable flight straight away because it presupposes that the traveler has entered all price-relevant information before submitting the search query.</div>
+                  <span className="text-xl font-bold leading-[30px]  text-black">
+                    Searching for the right flight is extremely stressful.
+                    <br />
+                  </span>
+                  <span className="text-xl font-normal leading-[30px]  text-black">
+                    High prices, limited availability, artificial scarcity, a
+                    plenitude of options, as well as an ingrained penchant for
+                    cost traps and loopholes.
+                  </span>
                 </div>
-                <div className="flex-col justify-start items-start gap-4 flex pr-4">
-                  <div className="opacity-70"><span className="text-white text-xl font-semibold leading-[32px]">The dilemma: </span><span className="text-white text-xl font-normal leading-[32px] ">this price-relevant information affects availability, travel time, and service. At the same time, they are factors for the traveler that can be changed depending on the result and personal preferences and flexibility. As a result, travelers develop their own user hacks to compare different search parameters and weigh the trade-off between price and convenience.  <br /> <br />    How can we give travelers a better flight search experience? Our pitch is The Balancing Act: a guided dialogue between traveler and airline. Strap in — we’re taking a deep dive.</span></div>
+                <div>
+                  <span className="text-xl font-bold leading-[30px]  text-black">
+                    The flight gets more expensive with every search.
+                    <br />
+                  </span>
+                  <span className="text-xl font-normal leading-[30px]  text-black">
+                    Opaque pricing and the feeling of being on the airline’s
+                    hook make travelers suspicious of cookies and tracking.
+                  </span>
+                </div>
+                <div>
+                  <span className="text-xl font-bold leading-[30px]  text-black">
+                    Flights are like looking for a needle in a haystack.
+                    <br />
+                  </span>
+                  <span className="text-xl font-normal leading-[30px]  text-black">
+                    Alone, the route from Frankfurt to Honolulu offers 8,777
+                    different flight combinations. To get a handle on what’s on
+                    offer, travelers turn to third-party providers like
+                    skyscanners to combine different routes or Google to find
+                    offers from the surrounding area and many more.
+                  </span>
+                </div>
+                <div>
+                  <span className="text-xl font-bold leading-[30px]  text-black">
+                    Long waiting times are nerve-wracking.
+                    <br />
+                  </span>
+                  <span className="text-xl font-normal leading-[30px]  text-black">
+                    Prices are recalculated, and availability is checked for
+                    every search query. In our test, a query usually takes 10
+                    seconds. This always leads to long waiting times in the
+                    observed search behavior.
+                  </span>
+                </div>
+                <div>
+                  <span className="text-xl font-bold leading-[30px]  text-black">
+                    The quest for the best flight deal.
+                    <br />
+                  </span>
+                  <span className="text-xl font-normal leading-[30px]  text-black">
+                    The most important decision criterion for a flight is still
+                    the price. But every search parameter influences it. The
+                    lack of price communication reinforces the feeling of
+                    intransparency.
+                  </span>
+                </div>
+                <div>
+                  <span className="text-xl font-bold leading-[30px]  text-black">
+                    The feeling of having paid too much for the flight.
+                    <br />
+                  </span>
+                  <span className="text-xl font-normal leading-[30px]  text-black">
+                    When it comes to flights, most travelers are confronted with
+                    “from” prices. However, these are only available on certain
+                    flights and in limited numbers. What if such flights are not
+                    available? This leads to negative anchoring: what seemed
+                    affordable at the beginning now seems all the more
+                    expensive.
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div className=" mt-12 inline-flex flex-col items-start justify-start gap-8">
+              <div className="flex flex-col items-start justify-start gap-2">
+                <div className=" text-[32px] font-bold leading-[56px]  text-neutral-900">
+                  Backstage: What We Don’t See
+                </div>
+                <div className=" text-xl font-normal leading-[30px]  text-black">
+                  It takes a look behind the curtain to find out that there are
+                  numerous technical and business constraints that have an
+                  enormous impact on flight search. Rather than years of
+                  usability engineering, the search experience is largely
+                  determined by third-party booking systems, dynamic pricing,
+                  and cost-per-request mechanics.
+                </div>
+              </div>
+              <div className="flex flex-col items-start justify-start gap-6">
+                <div>
+                  <span className="text-xl font-bold leading-[30px]  text-black">
+                    3rd Party Booking System.
+                    <br />
+                  </span>
+                  <span className="text-xl font-normal leading-[30px]  text-black">
+                    Behind most flight searches is a reservation system running
+                    called Amadeus. This is where millions of customers purchase
+                    their tickets. Amadeus is mostly responsible for which data
+                    points are available and how the interface is designed.
+                    Airlines use those systems and can only exert limited
+                    influence on a better solution.
+                  </span>
+                </div>
+                <div>
+                  <span className="text-xl font-bold leading-[30px]  text-black">
+                    Dynamic Pricing.
+                    <br />
+                  </span>
+                  <span className="text-xl font-normal leading-[30px]  text-black">
+                    Dynamic pricing is used to set the price of a product based
+                    on current market conditions. Prices fluctuate in real-time
+                    based on current data. This includes data on customer
+                    booking behavior, competitor airline prices, popular events,
+                    and a variety of other factors that affect product demand
+                    and necessitate price adjustments.
+                  </span>
+                </div>
+                <div>
+                  <span className="text-xl font-bold leading-[30px]  text-black">
+                    Cost per request.
+                    <br />
+                  </span>
+                  <span className="text-xl font-normal leading-[30px]  text-black">
+                    In most cases, searches are charged per request. To keep
+                    costs down, airlines want to reduce search requests. This
+                    leads to avoiding both pre-emptive and iterative queries.
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div className=" my-12 inline-flex flex-col items-start justify-start  gap-2 rounded-3xl bg-indigo-600 px-6 py-10">
+              <div className="flex flex-col items-start justify-start gap-9">
+                <div className="flex flex-col items-start justify-center gap-4">
+                  <div className="text-base font-semibold leading-normal text-white  opacity-70">
+                    Reframing The Problem
+                  </div>
+                  <div className="text-2xl font-semibold leading-[32px]  text-white">
+                    Flight searches are structured in such a way that it is
+                    highly unlikely that a customer can find a suitable flight
+                    straight away because it presupposes that the traveler has
+                    entered all price-relevant information before submitting the
+                    search query.
+                  </div>
+                </div>
+                <div className="flex flex-col items-start justify-start gap-4 pr-4">
+                  <div className="opacity-70">
+                    <span className="text-xl font-semibold leading-[32px] text-white">
+                      The dilemma:{' '}
+                    </span>
+                    <span className="text-xl font-normal leading-[32px] text-white ">
+                      this price-relevant information affects availability,
+                      travel time, and service. At the same time, they are
+                      factors for the traveler that can be changed depending on
+                      the result and personal preferences and flexibility. As a
+                      result, travelers develop their own user hacks to compare
+                      different search parameters and weigh the trade-off
+                      between price and convenience. <br /> <br /> How can we
+                      give travelers a better flight search experience? Our
+                      pitch is The Balancing Act: a guided dialogue between
+                      traveler and airline. Strap in — we’re taking a deep dive.
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <div className=" flex-col justify-start items-start gap-6 inline-flex">
-              <div className=" text-neutral-900 text-[32px] font-bold font-['Inter'] leading-[56px]">The Flight Search Redesign: <br />Introducing The “Balancing Act”</div>
-              <div className=" text-black text-xl font-normal font-['Inter'] leading-[30px]">What makes a search successful? It’s an increasingly important question in the age of global travel and its limitless possibilities. We focus on finding your personal solution. It puts the traveler, their occasion, and their budget at the center of the interaction and looks at how well the flight offer fits. To do this, we fundamentally change the tailoring of the interaction with travelers. We break down the search form into individual tasks and change the sequence of interactions. This allows a more balanced approach between friction and progress.</div>
+            <div className=" inline-flex flex-col items-start justify-start gap-6">
+              <div className=" font-['Inter'] text-[32px] font-bold leading-[56px] text-neutral-900">
+                The Flight Search Redesign: <br />
+                Introducing The “Balancing Act”
+              </div>
+              <div className=" font-['Inter'] text-xl font-normal leading-[30px] text-black">
+                What makes a search successful? It’s an increasingly important
+                question in the age of global travel and its limitless
+                possibilities. We focus on finding your personal solution. It
+                puts the traveler, their occasion, and their budget at the
+                center of the interaction and looks at how well the flight offer
+                fits. To do this, we fundamentally change the tailoring of the
+                interaction with travelers. We break down the search form into
+                individual tasks and change the sequence of interactions. This
+                allows a more balanced approach between friction and progress.
+              </div>
             </div>
 
-            <div className='my-6'>
-              <div className=" text-neutral-900 text-[32px] font-bold leading-[56px]">Task</div>
-              <div className=" text-black text-xl font-normal leading-[30px] my-6">The task is to find a suitable flight. We see that this usually takes several attempts and is achieved with the help of different search platforms and flight brokers. This shows that we are clearly in a weighing phase when searching for a flight. Different flights, routes, and times are weighed against travel planning criteria as well as personal preferences and limiting factors of the traveler.</div>
-              <Image src='/casestudy/intlflight/researchbar.png' alt='bars' height={98 + 514} width={66 + 845} />
+            <div className="my-6">
+              <div className=" text-[32px] font-bold leading-[56px] text-neutral-900">
+                Task
+              </div>
+              <div className=" my-6 text-xl font-normal leading-[30px] text-black">
+                The task is to find a suitable flight. We see that this usually
+                takes several attempts and is achieved with the help of
+                different search platforms and flight brokers. This shows that
+                we are clearly in a weighing phase when searching for a flight.
+                Different flights, routes, and times are weighed against travel
+                planning criteria as well as personal preferences and limiting
+                factors of the traveler.
+              </div>
+              <Image
+                src="/casestudy/intlflight/researchbar.png"
+                alt="bars"
+                height={98 + 514}
+                width={66 + 845}
+              />
             </div>
 
             <div>
-              <div className="text-neutral-900 text-[32px] font-bold font-['Inter'] leading-[56px]">Intention of use</div>
-              <div className="text-black text-xl font-normal font-['Inter'] leading-[30px]">The intention of use is a key determinant of interaction. The better we tailor our interface to the intention of use, the higher the probability that the interaction will be successful. Research findings show that usage intentions for digital applications can be assigned to three categories: “Act,” “Understand,” and “Explore.” In our case, we can clearly attribute the flight search to the “Act” usage intention: users have a specific task and want to make progress in completing that task as quickly as possible. Flight search is characterized by a clear goal. Travelers want to get an overview of the available flights to find the best option for their specific solution space. They take a structured approach and selectively change search parameters to uncover inconsistencies and explore the limits of what is available.</div>
-              <Image src='/casestudy/intlflight/researchtable.png' alt='bars' height={98 + 514} width={66 + 845} />
+              <div className="font-['Inter'] text-[32px] font-bold leading-[56px] text-neutral-900">
+                Intention of use
+              </div>
+              <div className="font-['Inter'] text-xl font-normal leading-[30px] text-black">
+                The intention of use is a key determinant of interaction. The
+                better we tailor our interface to the intention of use, the
+                higher the probability that the interaction will be successful.
+                Research findings show that usage intentions for digital
+                applications can be assigned to three categories: “Act,”
+                “Understand,” and “Explore.” In our case, we can clearly
+                attribute the flight search to the “Act” usage intention: users
+                have a specific task and want to make progress in completing
+                that task as quickly as possible. Flight search is characterized
+                by a clear goal. Travelers want to get an overview of the
+                available flights to find the best option for their specific
+                solution space. They take a structured approach and selectively
+                change search parameters to uncover inconsistencies and explore
+                the limits of what is available.
+              </div>
+              <Image
+                src="/casestudy/intlflight/researchtable.png"
+                alt="bars"
+                height={98 + 514}
+                width={66 + 845}
+              />
             </div>
             <p className=" my-6">
               To improve International booking conversion by 200- 300 bps
@@ -587,7 +779,7 @@ const CaseStudy = () => {
             </div>
           </div>
 
-          <div className="challenge | mb-24" id='challenge'>
+          <div className="challenge | mb-24 scroll-mt-44" id="challenge">
             <h2 className="mb-12 text-5xl font-bold leading-[56px]">
               Challenge
             </h2>
@@ -809,7 +1001,7 @@ const CaseStudy = () => {
             </div>
           </div>
 
-          <div className="finaldesign | mb-24" id='finaldesign'>
+          <div className="finaldesign | mb-24 scroll-mt-44" id="finaldesign">
             <h2 className="mb-12 text-5xl font-bold leading-[56px]">
               Final Design
             </h2>
@@ -1083,53 +1275,100 @@ const CaseStudy = () => {
               </div>
             </div>
 
-            <div className='final-design'>
-
-              <div className="mb-6 text-neutral-900 text-[32px] font-bold font-['Inter'] leading-[56px]">Final Design</div>
-              <div className=" text-black text-xl font-normal font-['Inter'] leading-[30px]">Every element in this screen is important for a user to book a right flight, we&apos;ve fine-tuned various design elements for better user-friendly experience. We&apos;ve strategically placed everything from time to icon, and introduced intuitive sorting options. Filters, influenced by user habits, and seamlessly organized for better visibility.<br/>The expanded tuple now boasts a side sheet design, inspired by users feedback, allowing users to focus effortlessly on your chosen flight. We&apos;ve enhanced information scanning, added helpful details like clear layover information and well-placed baggage details. The new dedicated fare rules tab ensures you have all the information on cancellation and date change policies right upfront, empowering you to make informed decisions.<br/>Our goal has always been to prioritize your needs, providing a clear, transparent, and easy-to-navigate flight booking experience.</div>
+            <div className="final-design">
+              <div className="mb-6 font-['Inter'] text-[32px] font-bold leading-[56px] text-neutral-900">
+                Final Design
+              </div>
+              <div className=" font-['Inter'] text-xl font-normal leading-[30px] text-black">
+                Every element in this screen is important for a user to book a
+                right flight, we&apos;ve fine-tuned various design elements for
+                better user-friendly experience. We&apos;ve strategically placed
+                everything from time to icon, and introduced intuitive sorting
+                options. Filters, influenced by user habits, and seamlessly
+                organized for better visibility.
+                <br />
+                The expanded tuple now boasts a side sheet design, inspired by
+                users feedback, allowing users to focus effortlessly on your
+                chosen flight. We&apos;ve enhanced information scanning, added
+                helpful details like clear layover information and well-placed
+                baggage details. The new dedicated fare rules tab ensures you
+                have all the information on cancellation and date change
+                policies right upfront, empowering you to make informed
+                decisions.
+                <br />
+                Our goal has always been to prioritize your needs, providing a
+                clear, transparent, and easy-to-navigate flight booking
+                experience.
+              </div>
             </div>
-            <Image src="/casestudy/intlflight/challege-last-final.png" alt='' width={912} height={499+48} className='
-            mt-4'/>
+            <Image
+              src="/casestudy/intlflight/challege-last-final.png"
+              alt=""
+              width={912}
+              height={499 + 48}
+              className="
+            mt-4"
+            />
           </div>
 
-          <div className="outcome | mb-24" id="outcome">
+          <div className="outcome | mb-24 scroll-mt-44" id="outcome">
             <h2 className="mb-8 text-5xl font-bold leading-[56px]">Outcome</h2>
             <h3 className=" mb-4 text-[32px] font-bold leading-[56px] text-neutral-900">
-            Launched the new version by the end of jun&apos;23
+              Launched the new version by the end of jun&apos;23
             </h3>
             <p className="mb-9 text-xl font-normal leading-[30px] text-black">
-            We successfully rolled out the latest version with the redesigned tuples and enhanced user-friendly features. With the design largely settled, I collaborated closely with our dedicated engineering team throughout the implementation phase. Weekly sync-ups with both the engineers and product manager allowed for continuous status updates and addressing any challenges. Despite encountering a few hiccups, I made minor iterations and devised workarounds to ensure a seamless process. The new version, featuring all the anticipated features, was successfully launched by the end of June 2023
+              We successfully rolled out the latest version with the redesigned
+              tuples and enhanced user-friendly features. With the design
+              largely settled, I collaborated closely with our dedicated
+              engineering team throughout the implementation phase. Weekly
+              sync-ups with both the engineers and product manager allowed for
+              continuous status updates and addressing any challenges. Despite
+              encountering a few hiccups, I made minor iterations and devised
+              workarounds to ensure a seamless process. The new version,
+              featuring all the anticipated features, was successfully launched
+              by the end of June 2023
             </p>
             <Image
               src="/casestudy/intlflight/outcomegrp.svg"
               width={912}
               height={265}
-              alt=''
-              className='mb-10'
+              alt=""
+              className="mb-10"
             />
 
             <Image
               src="/casestudy/intlflight/outcomemain.png"
               width={912}
               height={265}
-              alt=''
+              alt=""
             />
-
           </div>
 
-
-          <div className="closing | mb-24" id='closingnot'>
-            <h2 className="mb-8 text-5xl font-bold leading-[56px]">Closing Notes</h2>
+          <div className="closing | mb-24 scroll-mt-44" id="closingnot">
+            <h2 className="mb-8 text-5xl font-bold leading-[56px]">
+              Closing Notes
+            </h2>
             <p className=" mb-6">
-              Initially, our team wasn&apos;t entirely sure about making changes, thinking we were doing well in the international market. However, when we closely looked at how many people were actually completing their bookings, we were in for a surprise. The numbers showed a whopping 200% increase in the total value of international flight bookings! <br />
-              This eye-opening data convinced us that there&apos;s a real opportunity to grow in the international market. So, we&apos;ve decided to invest more in the next quarter, especially in making international flight experiences even better for you. We&apos;re excited to bring you more options and improvements based on this great news! Your positive experiences and feedback keep us motivated to keep enhancing our services.
+              Initially, our team wasn&apos;t entirely sure about making
+              changes, thinking we were doing well in the international market.
+              However, when we closely looked at how many people were actually
+              completing their bookings, we were in for a surprise. The numbers
+              showed a whopping 200% increase in the total value of
+              international flight bookings! <br />
+              This eye-opening data convinced us that there&apos;s a real
+              opportunity to grow in the international market. So, we&apos;ve
+              decided to invest more in the next quarter, especially in making
+              international flight experiences even better for you. We&apos;re
+              excited to bring you more options and improvements based on this
+              great news! Your positive experiences and feedback keep us
+              motivated to keep enhancing our services.
             </p>
           </div>
         </div>
       </div>
 
-      <div className='py-[120px] mb-[488px] mt mx-auto flex max-w-largest'>
-        <h3 className='text-5xl font-semibold tracking-[-1.6px] leading-[92px]'>
+      <div className="mt mx-auto mb-[488px] flex max-w-largest py-[120px]">
+        <h3 className="text-5xl font-semibold leading-[92px] tracking-[-1.6px]">
           Similar casestudy
         </h3>
       </div>

@@ -17,7 +17,7 @@ const page = () => {
             and designing tools that empower seamless and efficient work for
             people and businesses.{' '}
           </p>
-          <button className="justify-center inline-flex rounded-xl bg-[#573FEA]	px-5 py-4 text-white">
+          <button className="inline-flex justify-center rounded-xl bg-[#573FEA]	px-5 py-4 text-white">
             Connect with me
           </button>
         </div>

@@ -12,7 +12,10 @@ const Card = () => {
             for Airlines
           </h1>
           <p className="mb-16 font-medium opacity-70">
-            This project seeks to transform the conventional approach to how airlines organize their fare options, providing innovative solutions that bring about positive changes in the airline industry, with a primary focus on benefiting passengers.
+            This project seeks to transform the conventional approach to how
+            airlines organize their fare options, providing innovative solutions
+            that bring about positive changes in the airline industry, with a
+            primary focus on benefiting passengers.
           </p>
           <Link href="">
             <button className="inline-flex justify-center gap-2 rounded-xl border-[3px] border-solid border-[#573FEA] p-9 text-2xl font-semibold text-[#573FEA]">
@@ -27,7 +30,12 @@ const Card = () => {
           </Link>
         </div>
         <div className="flex-shrink-0 rounded-t-[20px] border border-b-0 border-solid border-black bg-white px-5 pt-9 shadow-workCardMobile">
-          <Image width={360} height={500} src="/workpage/famariline.png" alt="flight" />
+          <Image
+            width={360}
+            height={500}
+            src="/workpage/famariline.png"
+            alt="flight"
+          />
         </div>
       </div>
     </div>
