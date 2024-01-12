@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Footer from '@/components/footer'
 const page = () => {
   return (
-    <div>
+    <div className="bg-[#F8F7F2]">
       <Navbar />
       <section className="relative mx-auto max-w-largest pb-40 pt-[120px]">
         <div>
@@ -17,7 +17,7 @@ const page = () => {
             and designing tools that empower seamless and efficient work for
             people and businesses.{' '}
           </p>
-          <button className="justify-cente r inline-flex rounded-xl bg-[#573FEA]	px-5 py-4 text-white">
+          <button className="justify-center inline-flex rounded-xl bg-[#573FEA]	px-5 py-4 text-white">
             Connect with me
           </button>
         </div>
