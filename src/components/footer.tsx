@@ -26,10 +26,12 @@ const footer = () => {
             <span>Drop a mail</span>{' '}
             <Image width={32} height={32} alt="arrow" src="/whitearrow.svg" />
           </button>
-          <button className="inline-flex shrink-0 justify-center gap-2 rounded-xl border-[3px] border-solid border-white p-9 text-2xl font-semibold text-[white]">
-            <span>Download Resume</span>{' '}
-            <Image width={32} height={32} alt="arrow" src="/whitearrow.svg" />
-          </button>
+          <a href="https://drive.google.com/file/d/1GiMfsFA9JUIHsorj5wrbBxiOXCi_QHWo/view" target='new'>
+            <button className="inline-flex shrink-0 justify-center gap-2 rounded-xl border-[3px] border-solid border-white p-9 text-2xl font-semibold text-[white]">
+              <span>Download Resume</span>{' '}
+              <Image width={32} height={32} alt="arrow" src="/whitearrow.svg" />
+            </button>
+          </ a>
         </div>
         <div className="flex gap-6">
           <Image src="/dribbble.svg" height={48} width={48} alt="dribbble" />
