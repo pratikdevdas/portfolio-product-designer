@@ -208,7 +208,7 @@ const CaseStudy = () => {
                   and can be easily overlooked.
                 </div>
               </div>
-              <div className="row-span-3 row-start-5 flex h-min gap-4 rounded-2xl bg-[#F3F1EB] p-4 ">
+              <div className="row-span-3  flex h-min gap-4 rounded-2xl bg-[#F3F1EB] p-4 ">
                 <div className="items  flex h-[24px]  w-[24px] shrink-0 items-center justify-center self-start rounded-[84px] bg-[#970000] text-[15px] font-bold text-white">
                   2
                 </div>
@@ -216,10 +216,10 @@ const CaseStudy = () => {
                   Users find it{' '}
                   <span className="font-bold">
                     challenging to intuitively understand Airport codes
-                  </span>{' '}
+                  </span>
                 </div>
               </div>
-              <div className="row-span-3 flex h-min gap-4 rounded-2xl bg-[#F3F1EB] p-4">
+              <div className="row-span-3 row-start-5 flex h-min gap-4 rounded-2xl bg-[#F3F1EB] p-4">
                 <div className="items  flex h-[24px]  w-[24px] shrink-0 items-center justify-center self-start rounded-[84px] bg-[#970000] text-[15px] font-bold text-white ">
                   3
                 </div>
@@ -296,46 +296,41 @@ const CaseStudy = () => {
                   <div className="bg-[#745DFF] p-4 ">
                     <div className="mb-2 flex gap-2">
                       <div className="flex h-[24px] w-[24px] shrink-0 items-center justify-center rounded-[4px] bg-white text-xs font-semibold text-[#2F0DFF]">
-                        1
+                        2
                       </div>
                       <div className="text-base font-semibold text-white">
-                        Reduce time spend on tasks
+                      Improve international booking conversion
                       </div>
                     </div>
                     <p className="text-sm font-light ">
-                      {' '}
-                      Reduce the time users spend on each task by streamlining
-                      the booking process and eliminating unnecessary steps
+                    Improving conversion rates by identifying and addressing specific bottlenecks in the user journey.
                     </p>
                   </div>
                   <div className="bg-[#745DFF] p-4 ">
                     <div className="mb-2 flex gap-2">
                       <div className="flex h-[24px] w-[24px] shrink-0 items-center justify-center rounded-[4px] bg-white text-xs font-semibold text-[#2F0DFF]">
-                        1
+                        3
                       </div>
                       <div className="text-base font-semibold text-white">
-                        Reduce time spend on tasks
+                        Increase the GMV
                       </div>
                     </div>
                     <p className="text-sm font-light ">
                       {' '}
-                      Reduce the time users spend on each task by streamlining
-                      the booking process and eliminating unnecessary steps
+                      Optimize pricing strategies to align with user preferences and market demands, thereby increasing the overall GMV.
                     </p>
                   </div>
                   <div className="bg-[#745DFF] p-4 ">
                     <div className="mb-2 flex gap-2">
                       <div className="flex h-[24px] w-[24px] shrink-0 items-center justify-center rounded-[4px] bg-white text-xs font-semibold text-[#2F0DFF]">
-                        1
+                        4
                       </div>
                       <div className="text-base font-semibold text-white">
-                        Reduce time spend on tasks
+                        Quick Access to Best Flight Options
                       </div>
                     </div>
                     <p className="text-sm font-light ">
-                      {' '}
-                      Reduce the time users spend on each task by streamlining
-                      the booking process and eliminating unnecessary steps
+                    Provide filters and sorting options to allow users to quickly find their choices based on price, duration, or airline
                     </p>
                   </div>
                 </div>
@@ -1367,10 +1362,15 @@ const CaseStudy = () => {
         </div>
       </div>
 
-      <div className="mt mx-auto mb-[488px] flex max-w-largest py-[120px]">
+      <div className="mt mx-auto mb-[488px] max-w-largest py-[120px]">
         <h3 className="text-5xl font-semibold leading-[92px] tracking-[-1.6px]">
           Similar casestudy
         </h3>
+        <div className="flex">
+          <div className='text-center'>
+
+          </div>
+        </div>
       </div>
       <Footer></Footer>
     </section>
