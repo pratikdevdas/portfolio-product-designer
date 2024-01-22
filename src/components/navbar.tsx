@@ -14,7 +14,7 @@ const Navbar = () => {
         <div className="mx-auto max-w-largest py-4 text-center  font-semibold text-[#573FEA]">
           <span>💼</span> Open to work as Full-time and Freelancer .{' '}
           <Link href="#footer" className="underline">
-            Contact
+            contact
           </Link>
         </div>
       </div>
@@ -30,22 +30,22 @@ const Navbar = () => {
               className="flex gap-11 font-medium"
             >
               <li className={`${path === '/work' && 'text-[#573FEA]'}`}>
-                <Link href="/work">Work</Link>
+                <Link href="/work">work</Link>
               </li>
               <li>
                 <Link href="#">workshop</Link>
               </li>
               <li className={`${path === '/about' && 'text-[#573FEA]'}`}>
-                <Link href="/about">About Me</Link>
+                <Link href="/about">about me</Link>
               </li>
               <li>
-                <Link href="#footer">Contact</Link>
+                <Link href="#footer">contact</Link>
               </li>
             </ul>
           </nav>
           <a href="https://drive.google.com/file/d/1GiMfsFA9JUIHsorj5wrbBxiOXCi_QHWo/view" target='new'>
             <button className="inline-flex justify-center rounded-xl bg-[#573FEA] px-5 py-4 text-white">
-            Check Resume
+            check resume
             </button>
           </a>
         </div>
