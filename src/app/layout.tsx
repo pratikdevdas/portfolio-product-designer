@@ -8,8 +8,9 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'Shushant Kumar',
   description: 'Shushant Kumar | Product Designer',
+  metadataBase: new URL('https://i.ibb.co'),
   openGraph: {
-    images: '/OGimage.png'
+    images: '/n7yLwT5/OGimage.png'
   },
 }
 
