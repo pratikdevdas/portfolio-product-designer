@@ -58,7 +58,7 @@ const CaseStudy = () => {
 
           <div className="header | mb-24 scroll-pt-24">
             <h1 className="mb-4 text-[64px] font-semibold leading-[72px]">
-              Redesigning, International Flights booking experience{' '}
+            Redesigning, International Flights Search experience{' '}
             </h1>
             <p className="mb-10 text-2xl font-semibold leading-9">
               Aiming to revolutionise the way travellers plan and book their
@@ -664,7 +664,10 @@ const CaseStudy = () => {
                 width={66 + 845}
               />
             </div>
-            <p className=" my-6">
+            <div className="font-['Inter'] text-[32px] font-bold leading-[56px] text-neutral-900 my-6">
+                User Interviews
+            </div>
+            <p className=" mb-6">
               To improve International booking conversion by 200- 300 bps
               (relative) from SRP → Charged led us to conduct 20+ interviews
               with different type of travellers to find out what’s wrong and how

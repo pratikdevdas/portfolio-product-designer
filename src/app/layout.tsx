@@ -6,8 +6,11 @@ import React from 'react'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Sushant Kumar',
-  description: 'Sushant Kumar | Product Designer',
+  title: 'Shushant Kumar',
+  description: 'Shushant Kumar | Product Designer',
+  openGraph: {
+    images: '/OGimage.png'
+  },
 }
 
 export default function RootLayout({

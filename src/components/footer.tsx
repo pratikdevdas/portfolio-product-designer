@@ -22,10 +22,12 @@ const footer = () => {
           </p>
         </div>
         <div className="flex min-w-max gap-6 py-[56px] ">
-          <button className="inline-flex shrink-0 justify-center gap-2 rounded-xl border-[3px] border-solid border-white p-9 text-2xl font-semibold text-[white]">
-            <span>Drop a mail</span>{' '}
-            <Image width={32} height={32} alt="arrow" src="/whitearrow.svg" />
-          </button>
+          <a href="mailto:shushant0657@gmail.com">
+            <button className="inline-flex shrink-0 justify-center gap-2 rounded-xl border-[3px] border-solid border-white p-9 text-2xl font-semibo<ld text-[white]">
+              <span>Drop a mail</span>{' '}
+              <Image width={32} height={32} alt="arrow" src="/whitearrow.svg" />
+            </button>
+          </a>
           <a href="https://drive.google.com/file/d/1GiMfsFA9JUIHsorj5wrbBxiOXCi_QHWo/view" target='new'>
             <button className="inline-flex shrink-0 justify-center gap-2 rounded-xl border-[3px] border-solid border-white p-9 text-2xl font-semibold text-[white]">
               <span>Download Resume</span>{' '}
@@ -34,13 +36,25 @@ const footer = () => {
           </ a>
         </div>
         <div className="flex gap-6">
-          <Image src="/dribbble.svg" height={48} width={48} alt="dribbble" />
-          <Image src="/behance.svg" height={48} width={48} alt="behance" />
-          <Image src="/figma.svg" height={48} width={48} alt="figma" />
-          <Image src="/facebook.svg" height={48} width={48} alt="facebook" />
-          <Image src="/figma.svg" height={48} width={48} alt="figma" />
-          <Image src="/figma.svg" height={48} width={48} alt="figma" />
-          {/* <Image src="/behance.svg" height={} width={} alt='' /> */}
+          <a href="https://dribbble.com/Shushant0657">
+            <Image src="/dribbble.svg" height={48} width={48} alt="dribbble" />
+          </a>
+          <a href="https://www.behance.net/shushant0657">
+            <Image src="/behance.svg" height={48} width={48} alt="behance" />
+          </a>
+          <a href="https://www.figma.com/@shushant0657">
+            <Image src="/figma.svg" height={48} width={48} alt="figma" />
+          </a>
+          <a href="https://www.facebook.com/shushant0657">
+            <Image src="/facebook.svg" height={48} width={48} alt="facebook" />
+          </a>
+          <a href="https://www.instagram.com/shus.exe/">
+            <Image src="/instagram.svg" height={48} width={48} alt="instagram" />
+          </a>
+          <a href="https://www.linkedin.com/in/shushant0657/">
+            <Image src="/linkedin.svg" height={48} width={48} alt="linkedin" />
+          </a>
+
         </div>
       </div>
 
