@@ -3,9 +3,9 @@ import Link from 'next/link'
 import React from 'react'
 const footer = () => {
   return (
-    <div className="relative bg-[#0E0D1A] pb-[304px]  pt-[530px]">
+    <div  className="relative bg-[#0E0D1A] pb-[304px]  pt-[530px]">
       <div className="absolute left-1/2 top-0 flex flex-col items-center rounded-3xl bg-[#573FEA] px-[316px] py-[56px] text-center text-white -translate-x-1/2 -translate-y-1/2">
-        <div>
+        <div id='footer' className='scroll-m-64'>
           <Link href="/">
             <Image
               src="/sush-white.svg"
@@ -23,7 +23,7 @@ const footer = () => {
         </div>
         <div className="flex min-w-max gap-6 py-[56px] ">
           <a href="mailto:shushant0657@gmail.com">
-            <button className="inline-flex shrink-0 justify-center gap-2 rounded-xl border-[3px] border-solid border-white p-9 text-2xl font-semibo<ld text-[white]">
+            <button className="inline-flex shrink-0 justify-center gap-2 rounded-xl border-[3px] border-solid border-white p-9 text-2xl font-semibold text-[white]">
               <span>Drop a mail</span>{' '}
               <Image width={32} height={32} alt="arrow" src="/whitearrow.svg" />
             </button>

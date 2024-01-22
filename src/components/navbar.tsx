@@ -13,7 +13,7 @@ const Navbar = () => {
       <div className="bg-[#DED9FF]">
         <div className="mx-auto max-w-largest py-4 text-center  font-semibold text-[#573FEA]">
           <span>💼</span> Open to work as Full-time and Freelancer .{' '}
-          <Link href="#" className="underline">
+          <Link href="#footer" className="underline">
             Contact
           </Link>
         </div>
@@ -39,7 +39,7 @@ const Navbar = () => {
                 <Link href="/about">About Me</Link>
               </li>
               <li>
-                <Link href="#">Contact</Link>
+                <Link href="#footer">Contact</Link>
               </li>
             </ul>
           </nav>
