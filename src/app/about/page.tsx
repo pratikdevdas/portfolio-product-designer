@@ -2,6 +2,7 @@ import Navbar from '@/components/navbar'
 import React from 'react'
 import Image from 'next/image'
 import Footer from '@/components/footer'
+import Link from 'next/link'
 const page = () => {
   return (
     <div className="bg-[#F8F7F2]">
@@ -17,9 +18,11 @@ const page = () => {
             and designing tools that empower seamless and efficient work for
             people and businesses.{' '}
           </p>
-          <button className="inline-flex justify-center rounded-xl bg-[#573FEA]	px-5 py-4 text-white">
-            Connect with me
-          </button>
+          <Link href="#footer">
+            <button className="inline-flex justify-center rounded-xl bg-[#573FEA]	px-5 py-4 text-white">
+              Connect with me
+            </button>
+          </Link>
         </div>
         <Image
           src="/about/hero-sus.png"

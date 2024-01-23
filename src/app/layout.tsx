@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   description: 'Shushant Kumar | Product Designer',
   metadataBase: new URL('https://i.ibb.co'),
   openGraph: {
-    images: '/n7yLwT5/OGimage.png'
+    images: '/n7yLwT5/OGimage.png',
   },
 }
 

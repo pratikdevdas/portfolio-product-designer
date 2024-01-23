@@ -43,9 +43,12 @@ const Navbar = () => {
               </li>
             </ul>
           </nav>
-          <a href="https://drive.google.com/file/d/1GiMfsFA9JUIHsorj5wrbBxiOXCi_QHWo/view" target='new'>
+          <a
+            href="https://drive.google.com/file/d/1GiMfsFA9JUIHsorj5wrbBxiOXCi_QHWo/view"
+            target="new"
+          >
             <button className="inline-flex justify-center rounded-xl bg-[#573FEA] px-5 py-4 text-white">
-            check resume
+              check resume
             </button>
           </a>
         </div>

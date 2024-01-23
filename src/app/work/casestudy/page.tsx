@@ -6,6 +6,7 @@ import Link from 'next/link'
 import discussImage from '../../../../public/casestudy/intlflight/new-tuple-discuss.png'
 import tupleAllImage from '../../../../public/casestudy/intlflight/tuples-all.png'
 import Footer from '@/components/footer'
+// import ComingSoonButton from '@/components/works/ComingSoonButton'
 
 const CaseStudy = () => {
   return (
@@ -58,7 +59,7 @@ const CaseStudy = () => {
 
           <div className="header | mb-24 scroll-pt-24">
             <h1 className="mb-4 text-[64px] font-semibold leading-[72px]">
-            Redesigning, International Flights Search experience{' '}
+              Redesigning, International Flights Search experience{' '}
             </h1>
             <p className="mb-10 text-2xl font-semibold leading-9">
               Aiming to revolutionise the way travellers plan and book their
@@ -299,11 +300,12 @@ const CaseStudy = () => {
                         2
                       </div>
                       <div className="text-base font-semibold text-white">
-                      Improve international booking conversion
+                        Improve international booking conversion
                       </div>
                     </div>
                     <p className="text-sm font-light ">
-                    Improving conversion rates by identifying and addressing specific bottlenecks in the user journey.
+                      Improving conversion rates by identifying and addressing
+                      specific bottlenecks in the user journey.
                     </p>
                   </div>
                   <div className="bg-[#745DFF] p-4 ">
@@ -317,7 +319,8 @@ const CaseStudy = () => {
                     </div>
                     <p className="text-sm font-light ">
                       {' '}
-                      Optimize pricing strategies to align with user preferences and market demands, thereby increasing the overall GMV.
+                      Optimize pricing strategies to align with user preferences
+                      and market demands, thereby increasing the overall GMV.
                     </p>
                   </div>
                   <div className="bg-[#745DFF] p-4 ">
@@ -330,7 +333,9 @@ const CaseStudy = () => {
                       </div>
                     </div>
                     <p className="text-sm font-light ">
-                    Provide filters and sorting options to allow users to quickly find their choices based on price, duration, or airline
+                      Provide filters and sorting options to allow users to
+                      quickly find their choices based on price, duration, or
+                      airline
                     </p>
                   </div>
                 </div>
@@ -664,8 +669,8 @@ const CaseStudy = () => {
                 width={66 + 845}
               />
             </div>
-            <div className="font-['Inter'] text-[32px] font-bold leading-[56px] text-neutral-900 my-6">
-                User Interviews
+            <div className="my-6 font-['Inter'] text-[32px] font-bold leading-[56px] text-neutral-900">
+              User Interviews
             </div>
             <p className=" mb-6">
               To improve International booking conversion by 200- 300 bps
@@ -1365,13 +1370,92 @@ const CaseStudy = () => {
         </div>
       </div>
 
-      <div className="mt mx-auto mb-[488px] max-w-largest py-[120px]">
-        <h3 className="text-5xl font-semibold leading-[92px] tracking-[-1.6px]">
+      <div className="mt mx-auto mb-[400px] max-w-largest py-[120px]">
+        <h3 className="mb-8 text-5xl font-semibold leading-[92px] tracking-[-1.6px]">
           Similar casestudy
         </h3>
-        <div className="flex">
-          <div className='text-center'>
+        <div className="grid grid-cols-2 gap-x-12">
+          <div className="relative flex-1 rounded-3xl bg-[#F9C0FB] px-6 py-[56px] text-center">
+            <div className="absolute left-4 top-4 font-semibold leading-6 ">
+              <p className="rounded-[56px] border-2 border-[#F480D4] bg-white px-4 py-2 text-[#F480D4]">
+                COMING SOON
+              </p>
+            </div>
+            <div className="pb-40">
+              <h1 className="mx-auto max-w-[386px] py-7 text-5xl font-semibold leading-[56px]">
+                CT Upgrade
+              </h1>
+              <div className="mb-10 flex items-center justify-center gap-2 ">
+                <p className="text-2xl font-semibold text-[#573FEA]">
+                  Read this casestudy
+                </p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                >
+                  <path
+                    fillRule="evenodd"
+                    clipRule="evenodd"
+                    d="M23.8988 8.82296C23.8342 8.66685 23.7387 8.52053 23.6123 8.39336C23.6104 8.39147 23.6085 8.38958 23.6066 8.3877C23.3467 8.12923 23.0067 8 22.6667 8H9.33333C8.59695 8 8 8.59695 8 9.33333C8 10.0697 8.59695 10.6667 9.33333 10.6667H19.4477L8.39052 21.7239C7.86983 22.2446 7.86983 23.0888 8.39052 23.6095C8.91122 24.1302 9.75544 24.1302 10.2761 23.6095L21.3333 12.5523V22.6667C21.3333 23.403 21.9303 24 22.6667 24C23.403 24 24 23.403 24 22.6667V9.33529C24 9.3292 24 9.32311 23.9999 9.31702C23.9978 9.14218 23.9621 8.97543 23.8988 8.82296Z"
+                    fill="#573FEA"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div className="absolute bottom-0 left-1/2 -translate-x-1/2">
+              <Image
+                src="/casestudy/intlflight/similar-cardCT.png"
+                alt="update"
+                width={500}
+                height={300}
+                className="w-[360px] max-w-none"
+              />
+            </div>
+          </div>
 
+          <div className="relative flex-1 rounded-3xl bg-[#B4A8FC] px-6 py-[56px] text-center">
+            <div className="absolute left-4 top-4 font-semibold leading-6 ">
+              <p className="rounded-[56px] border-2 border-[#F480D4] bg-white px-4 py-2 text-[#F480D4]">
+                COMING SOON
+              </p>
+            </div>
+            <div className="pb-36">
+              <h1 className="mx-auto max-w-[386px] text-5xl font-semibold leading-[56px]">
+                Making login simpler
+              </h1>
+              <div className="flex items-center justify-center gap-2 py-6 ">
+                <p className="text-2xl font-semibold text-[#573FEA]">
+                  Read this casestudy
+                </p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                >
+                  <path
+                    fillRule="evenodd"
+                    clipRule="evenodd"
+                    d="M23.8988 8.82296C23.8342 8.66685 23.7387 8.52053 23.6123 8.39336C23.6104 8.39147 23.6085 8.38958 23.6066 8.3877C23.3467 8.12923 23.0067 8 22.6667 8H9.33333C8.59695 8 8 8.59695 8 9.33333C8 10.0697 8.59695 10.6667 9.33333 10.6667H19.4477L8.39052 21.7239C7.86983 22.2446 7.86983 23.0888 8.39052 23.6095C8.91122 24.1302 9.75544 24.1302 10.2761 23.6095L21.3333 12.5523V22.6667C21.3333 23.403 21.9303 24 22.6667 24C23.403 24 24 23.403 24 22.6667V9.33529C24 9.3292 24 9.32311 23.9999 9.31702C23.9978 9.14218 23.9621 8.97543 23.8988 8.82296Z"
+                    fill="#573FEA"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <div className="absolute bottom-0 left-1/2 -translate-x-1/2">
+              <Image
+                src="/casestudy/intlflight/similar-cardLOGIN.png"
+                alt="update"
+                width={500}
+                height={300}
+                className="w-[360px] max-w-none"
+              />
+            </div>
           </div>
         </div>
       </div>

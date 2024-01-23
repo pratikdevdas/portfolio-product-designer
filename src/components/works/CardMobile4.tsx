@@ -7,7 +7,7 @@ const Card = () => {
     <div className="rounded-3xl bg-[#573FEA] hover:transition-all">
       <div className="flex justify-between gap-32 rounded-3xl border border-solid border-black bg-[#A0EBBE] px-24 pt-28 shadow-workCard duration-500 ease-card-up transform-style-3d translate-z-0 skew-x-0 skew-y-0 scale3d-100 ">
         <div className="mt-4 flex flex-col justify-center text-center">
-          <ComingSoonButton/>
+          <ComingSoonButton />
           <h1 className="mb-6 text-[64px] font-semibold leading-[80px] ">
             Sodexo Brazil
           </h1>

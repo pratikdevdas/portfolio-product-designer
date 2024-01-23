@@ -7,8 +7,8 @@ const Card = () => {
   return (
     <div className="rounded-3xl bg-[#573FEA] hover:transition-all">
       <div className=" relative flex justify-between gap-32 rounded-3xl border border-solid border-black bg-[#FFE9B0] px-24 py-24 pt-28 shadow-workCard duration-500 ease-card-up transform-style-3d translate-z-0 skew-x-0 skew-y-0 scale3d-100  ">
-        <ComingSoonButton/>
-        <div className="basis-3/6 text-center px-4">
+        <ComingSoonButton />
+        <div className="basis-3/6 px-4 text-center">
           <h1 className="mb-7 mt-16 text-[64px] font-semibold leading-[80px] ">
             Luminos
           </h1>
