@@ -18,23 +18,28 @@ const talksData = [
   {
     id: 'micro',
     title: 'MicroInteractions',
-    description: 'Run rewards programs and drive customer engagement',
+    description:
+      'Dive into the art of user engagement with captivating microinteractions',
     cardImageUrl: '/workpage/talks/MicroInteractions.svg',
     cardImageAlt: 'micro',
+    link: 'https://docs.google.com/presentation/d/13NxIdTiP_IyvS8AL9phjAi7YjtP1rd-jAJIEhtVycms/edit?usp=sharing',
   },
   {
     id: 'b2cvb2v',
     title: 'Designing for B2B vs B2C',
-    description: 'Access real-time business analytics',
+    description: 'Nuances of B2B and B2C design landscapes in a single glance.',
     cardImageUrl: '/workpage/talks/Designing for B2B vs B2C.svg',
+    link: 'https://www.figma.com/proto/9UcrQ9zslza1ojrohCtqMk/B2B-vs-B2C?page-id=0%3A1&type=design&node-id=0-3&viewport=479%2C409%2C0.02&t=wy7XuhaqrmikKRSk-1&scaling=contain&starting-point-node-id=0%3A3&mode=design',
     cardImageAlt: 'b2c',
   },
   {
     id: 'skill101',
     title: 'Wireframes skill 101',
-    description: 'Generate periodic preconfigured reports',
+    description:
+      'Master the fundamentals of effective design communication with Wireframes 101',
     cardImageUrl: '/workpage/talks/Wireframes skill 101.svg',
     cardImageAlt: 'Wireframes skill 101',
+    link: '#',
   },
 ]
 
@@ -193,26 +198,23 @@ const Work = () => {
 
         <div className="row-span-1 mx-auto grid max-w-largest grid-cols-3 items-stretch  gap-x-5 gap-y-8">
           {talksData.map((d) => (
-            // <div key={d.id} className="rounded-3xl bg-[#573FEA] hover:transition-all">
-            // <Link  className='h-full' href={`work/notable/${d.id}`}>
-            <div
-              key={d.id}
-              className="h-full rounded-3xl border border-solid border-black bg-white p-6 shadow-workCard"
-            >
-              <Image
-                src={d.cardImageUrl}
-                width={450}
-                height={450}
-                alt={d.cardImageAlt}
-                className="shrink-0"
-              ></Image>
-              <h3 className="pb-2  pt-6 text-2xl font-semibold leading-8">
-                {d.title}
-              </h3>
-              <p className="text-base leading-6">{d.description}</p>
-            </div>
-            //</Link>
-            // </div>
+            <a key={d.id} target="_blank" className="h-full" href={d.link}>
+              <div className="rounded-3xl bg-[#573FEA] hover:transition-all ">
+                <div className="relative h-full rounded-3xl border border-solid border-black bg-white p-6 shadow-workCard duration-500 ease-card-up transform-style-3d translate-z-0 skew-x-0 skew-y-0 scale3d-100 hover:-translate-y-[1.25rem] hover:translate-x-[0.5rem] hover:rotate-2">
+                  <Image
+                    src={d.cardImageUrl}
+                    width={450}
+                    height={450}
+                    alt={d.cardImageAlt}
+                    className="shrink-0"
+                  ></Image>
+                  <h3 className="pb-2  pt-6 text-2xl font-semibold leading-8">
+                    {d.title}
+                  </h3>
+                  <p className="text-base leading-6">{d.description}</p>
+                </div>
+              </div>
+            </a>
           ))}
         </div>
 
@@ -233,7 +235,7 @@ const Work = () => {
           </div>
           <div className="flex flex-1 flex-col gap-8">
             <div className="flex gap-6">
-              <div>
+              <div className="shrink-0">
                 <Image
                   alt="smile"
                   width={187}
@@ -246,33 +248,36 @@ const Work = () => {
                   Design Principles
                 </h4>
                 <p className="text-xl leading-8">
-                  Access real-time business analytics
+                  Inspiring solutions through seamless functionality,
+                  aesthetics, and empathy.
                 </p>
               </div>
             </div>
             <div className="flex gap-6">
-              <div>
+              <div className="shrink-0">
                 <Image
                   alt="smile"
-                  width={187}
+                  width={200}
+                  className="h-[107px] w-[187px]"
                   height={107}
                   src="/workpage/deck-process.svg"
                 />
               </div>
               <div>
                 <h4 className="mb-2 text-2xl font-bold leading-8">
-                  Design Process
+                  Design process
                 </h4>
                 <p className="text-xl leading-8">
-                  Access real-time business analytics
+                  Iterative design for purposeful and compelling solutions.
                 </p>
               </div>
             </div>
             <div className="flex gap-6">
-              <div>
+              <div className="shrink-0">
                 <Image
                   alt="smile"
                   width={187}
+                  className="h-[107px] w-[187px]"
                   height={107}
                   src="/workpage/container-process.svg"
                 />
@@ -282,7 +287,8 @@ const Work = () => {
                   System Thinking
                 </h4>
                 <p className="text-xl leading-8">
-                  Access real-time business analytics
+                  Systemic thinking shapes clear and efficient designs for
+                  complex challenges
                 </p>
               </div>
             </div>

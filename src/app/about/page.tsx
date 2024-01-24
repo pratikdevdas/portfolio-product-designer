@@ -244,7 +244,7 @@ const page = () => {
           </h1>
           <div className="flex flex-col gap-3 text-[28px] font-medium leading-[60px] -tracking-[1.6px]">
             <p>🏆 Zeta Outstanding Performer 2020</p>
-            <p>🏆 Zeta Outstanding Performer 2020</p>
+            <p>🏆 Zeta Spot Award 2021</p>
             <p>
               🏆 Zeta Above and Beyond Awardee 2021 <br />
               <span className="pl-8">( Shining star, Ultimate team)</span>
