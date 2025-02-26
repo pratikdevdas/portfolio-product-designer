@@ -14,9 +14,9 @@ export default function Home() {
           <span className="text-[#573FEA]">Shushant kumar</span>
         </h1>
         <p className="text-2xl font-medium leading-9">
-          I work as a 🧑🏼‍💻 Senior Product Designer for 💼 Flipkart-Cleartrip.
+          I work as a 🧑🏼‍💻 Lead Product Designer for 💼 Newme.asia, Ex-Flipkart-Cleartrip, Zeta.
           Passionate about creating functional 📏 and aesthetically 🌁 pleasing
-          designs, constantly learning and experimenting 🔬with new system and
+          designs, constantly learning and experimenting 🔬with new systems and
           technologies📡.
         </p>
       </section>
